@@ -5,12 +5,7 @@ import Container from "@material-ui/core/Container";
 
 import MainLayout from "../layouts/MainLayout";
 import HeroUnit from "../components/HeroUnit";
-import Cards from "../components/Cards";
-
-import en from "../../lang/en.json";
-import fr from "../../lang/fr.json";
-
-const supportedLangs = [en, fr]
+import LangCards from "../components/LangCards";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -47,7 +42,7 @@ export default function Home() {
       <Container className={classes.cardGrid} maxWidth="md">
         {/* End hero unit */}
         <Grid container spacing={4}>
-            <Cards options={supportedLangs} />
+            <LangCards />
         </Grid>
       </Container>
     </MainLayout>

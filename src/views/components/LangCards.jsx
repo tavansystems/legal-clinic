@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import Container from "@material-ui/core/Container";
@@ -9,6 +9,12 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Link from "@material-ui/core/Link";
+
+import en from "../../lang/en.json";
+import fr from "../../lang/fr.json";
+import LangContext from "../../utils/LangContext";
+
+const supportedLangs = [en, fr]
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -28,18 +34,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Cards({ options }) {
+export default function Cards() {
   //   const [checked, setChecked] = useState(true)
+  const [lang, setLang] = useState(en)
   const classes = useStyles();
 
-  if(options.length === 0){
-    return (<></>)
-  }
-
   return (
-    <Container className={classes.cardGrid} maxWidth="md">
+    <LangContext.Provider value={lang}>
+      <Container className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
-      {options.map((option, index) => (
+      {supportedLangs.map((lang, index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
             <Card className={classes.card}>
               <CardMedia
@@ -49,7 +53,7 @@ export default function Cards({ options }) {
               />
               <CardContent className={classes.cardContent}>
                 <Typography gutterBottom variant="h5" component="h2">
-                  {option.title}
+                  {lang.title}
                 </Typography>
                 {/* <Typography>
                   This is a media card. You can use this section to describe the
@@ -57,9 +61,9 @@ export default function Cards({ options }) {
                 </Typography> */}
               </CardContent>
               <CardActions>
-                <Link href={window.location.href + "/" + option.slug}>
+                <Link href={window.location.href + lang.slug} onClick={() => console.log("he")}>
                   <Button size="small" color="primary">
-                    Choose
+                    {lang.literals.choose}
                   </Button>
                 </Link>
               </CardActions>
@@ -68,9 +72,6 @@ export default function Cards({ options }) {
       ))}
       </Grid>
     </Container>
+    </LangContext.Provider>
   );
 }
-
-Cards.defaultProps = {
-  options: []
-};

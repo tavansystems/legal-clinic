@@ -3,7 +3,8 @@
     "slug": "en",
     "literals": {
         "app_name": "Legal Hub",
-        "disclaimer": "Disclaimer: The following are general fact sheets and are not to be constituted as legal advice or any kind of legal document. The Muslim Legal Clinic will not be held liable for any mistake or loss incurred to you as a result of your reliance on these fact sheets."
+        "disclaimer": "Disclaimer: The following are general fact sheets and are not to be constituted as legal advice or any kind of legal document. The Muslim Legal Clinic will not be held liable for any mistake or loss incurred to you as a result of your reliance on these fact sheets.",
+        "choose": "Choose"
     },
     "options": [
         {
