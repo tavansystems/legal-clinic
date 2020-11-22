@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/legal-clinic/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/legal-clinic/static/js/main.88b88f7e.chunk.js",
-    "main.js.map": "/legal-clinic/static/js/main.88b88f7e.chunk.js.map",
+    "main.js": "/legal-clinic/static/js/main.632c01d9.chunk.js",
+    "main.js.map": "/legal-clinic/static/js/main.632c01d9.chunk.js.map",
     "runtime-main.js": "/legal-clinic/static/js/runtime-main.e16b8300.js",
     "runtime-main.js.map": "/legal-clinic/static/js/runtime-main.e16b8300.js.map",
-    "static/js/2.b49c13d4.chunk.js": "/legal-clinic/static/js/2.b49c13d4.chunk.js",
-    "static/js/2.b49c13d4.chunk.js.map": "/legal-clinic/static/js/2.b49c13d4.chunk.js.map",
+    "static/js/2.64b1e2be.chunk.js": "/legal-clinic/static/js/2.64b1e2be.chunk.js",
+    "static/js/2.64b1e2be.chunk.js.map": "/legal-clinic/static/js/2.64b1e2be.chunk.js.map",
     "static/js/3.6c8fe826.chunk.js": "/legal-clinic/static/js/3.6c8fe826.chunk.js",
     "static/js/3.6c8fe826.chunk.js.map": "/legal-clinic/static/js/3.6c8fe826.chunk.js.map",
     "index.html": "/legal-clinic/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/legal-clinic/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.b49c13d4.chunk.js.LICENSE.txt": "/legal-clinic/static/js/2.b49c13d4.chunk.js.LICENSE.txt"
+    "static/js/2.64b1e2be.chunk.js.LICENSE.txt": "/legal-clinic/static/js/2.64b1e2be.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e16b8300.js",
-    "static/js/2.b49c13d4.chunk.js",
+    "static/js/2.64b1e2be.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.88b88f7e.chunk.js"
+    "static/js/main.632c01d9.chunk.js"
   ]
 }
