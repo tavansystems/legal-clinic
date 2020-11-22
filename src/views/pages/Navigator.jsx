@@ -1,35 +1,15 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
-import { withRouter, Redirect, Switch } from 'react-router-dom';
+import { withRouter, Redirect } from 'react-router-dom';
 
 import LangContext from "../../utils/LangContext";
 import MainLayout from '../layouts/MainLayout';
-import HeroUnit from "../components/HeroUnit"
-import en from "../../lang/en.json"
-import fr from "../../lang/fr.json"
 import Cards from "../components/Cards"
 import ContentWrapper from "../components/ContentWrapper";
+import HeroUnit from "../components/HeroUnit";
 
-import { makeStyles } from "@material-ui/core/styles";
-const useStyles = makeStyles((theme) => ({
-    cardGrid: {
-        paddingTop: theme.spacing(8),
-        paddingBottom: theme.spacing(8),
-        backgroundColor: "#3f51b5"
-    },
-    card: {
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-    },
-    cardMedia: {
-        paddingTop: "56.25%", // 16:9
-    },
-    cardContent: {
-        flexGrow: 1,
-    },
-}));
+import en from "../../lang/en.json";
+import fr from "../../lang/fr.json";
+
 const supportedLangs = {
     options: {
         en: en,
@@ -38,11 +18,11 @@ const supportedLangs = {
 }
 
 function Navigator({ location, match }) {
-    const classes = useStyles();
     const [module, setModule] = useState({})
+    const [notFound, setNotFound] = useState(false)
+    const [selectedLang, setSelectedLang] = useState(supportedLangs.options.en)
 
     const { path, lang } = match.params
-    const selectedLang = supportedLangs.options[lang]
 
     const parsePath = useCallback(
         () => {
@@ -52,11 +32,7 @@ function Navigator({ location, match }) {
                 if (currentModule.options[slug]) {
                     currentModule = currentModule.options[slug]
                 } else {
-                    return (
-                        <Switch>
-                            <Redirect path="*" to='/users/profile/:id' />
-                        </Switch>
-                    )
+                    setNotFound(true)
                 }
             }
             setModule(currentModule)
@@ -64,36 +40,29 @@ function Navigator({ location, match }) {
         [path, selectedLang],
     );
 
+    const selectLang = useCallback(
+        () => {
+            if(supportedLangs.options[lang]){
+                setSelectedLang(supportedLangs.options[lang])
+            } else {
+                setNotFound(true)
+            }
+        },
+        [lang],
+    );
+
     useEffect(() => {
+        selectLang();
         parsePath();
-    }, [location.pathname, parsePath]);
-
-    const Content = () => {
-        if (module.content) {
-            return (
-                <Container className={classes.cardGrid} maxWidth="xl">
-                    <Grid container className={classes.cardGrid} spacing={2}>
-                        <Grid item xs={3}>
-                            <ContentWrapper content="SOME SIDEBAR" />
-                        </Grid>
-                        <Grid item xs={9}>
-                            <ContentWrapper content={module.content} />
-                        </Grid>
-                    </Grid>
-                </Container>
-            )
-        } else {
-            return (<></>)
-        }
-
-    }
+    }, [location.pathname, parsePath, selectLang]);
 
     return (
         <LangContext.Provider value={selectedLang}>
             <MainLayout key={location.pathname}>
                 <HeroUnit title={module.title} />
                 <Cards options={module.options} />
-                <Content />
+                {notFound ? <Redirect to="/404" /> : null}
+                <ContentWrapper sidebar="SIDEBAR" main={module.content} />
             </MainLayout>
         </LangContext.Provider>
     )
