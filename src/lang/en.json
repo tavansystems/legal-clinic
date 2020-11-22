@@ -6,22 +6,21 @@
         "disclaimer": "Disclaimer: The following are general fact sheets and are not to be constituted as legal advice or any kind of legal document. The Muslim Legal Clinic will not be held liable for any mistake or loss incurred to you as a result of your reliance on these fact sheets.",
         "choose": "Choose"
     },
-    "options": [
-        {
+    "options": {
+        "education": { 
             "title": "Education",
-            "slug": "education",
-            "options": [
-                {
+            "options": {
+                "suspension": {
                     "title": "What is a suspension?",
                     "slug": "suspensions",
                     "content": "A suspension means students are removed from school temporarily for a specific period of time. Students may be suspended for a period of time ranging from one school day up to 20 school days. Students cannot go to school or take part in regular school activities or events while on suspension."
                 },
-                {
+                "who-can-suspend": {
                     "title": "Who can suspend a student?",
                     "slug": "who-can-suspend",
                     "content": "A suspension means students are removed from school temporarily for a specific period of time. Students may be suspended for a period of time ranging from one school day up to 20 school days. Students cannot go to school or take part in regular school activities or events while on suspension."
                 }
-            ]
+            }
         }
-    ]
+    }
 }

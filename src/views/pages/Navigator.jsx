@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-
+import { withRouter, Redirect, Switch } from 'react-router-dom';
 
 import LangContext from "../../utils/LangContext";
 import MainLayout from '../layouts/MainLayout';
@@ -30,45 +30,46 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 }));
-const supportedLangs = [en, fr]
+const supportedLangs = {
+    options: {
+        en: en,
+        fr: fr
+    }
+}
 
-export default function Navigator() {
+function Navigator({ location, match }) {
     const classes = useStyles();
-    const [lang, setLang] = useState(en)
     const [module, setModule] = useState({})
-    const [options, setOptions] = useState([])
+
+    const { path, lang } = match.params
+    const selectedLang = supportedLangs.options[lang]
+
+    const parsePath = useCallback(
+        () => {
+            let pathlist = path.split("/")
+            let currentModule = selectedLang
+            for (let slug of pathlist) {
+                if (currentModule.options[slug]) {
+                    currentModule = currentModule.options[slug]
+                } else {
+                    return (
+                        <Switch>
+                            <Redirect path="*" to='/users/profile/:id' />
+                        </Switch>
+                    )
+                }
+            }
+            setModule(currentModule)
+        },
+        [path, selectedLang],
+    );
 
     useEffect(() => {
         parsePath();
-    }, []);
-
-    const parsePath = () => {
-        let pathname = window.location.pathname
-        let pathlist = pathname.split("/")
-        pathlist.shift()
-
-        for (let lang in supportedLangs) {
-            if (lang === pathlist[0]) {
-                setLang(lang)
-            }
-        }
-
-        let options = supportedLangs
-        let currentModule = supportedLangs
-        for (let slug of pathlist) {
-            for (let module of options) {
-                if (module.slug === slug) {
-                    options = module.options
-                    currentModule = module
-                }
-            }
-        }
-        setOptions(options)
-        setModule(currentModule)
-    }
+    }, [location.pathname, parsePath]);
 
     const Content = () => {
-        if(module.content){
+        if (module.content) {
             return (
                 <Container className={classes.cardGrid} maxWidth="xl">
                     <Grid container className={classes.cardGrid} spacing={2}>
@@ -84,16 +85,18 @@ export default function Navigator() {
         } else {
             return (<></>)
         }
- 
+
     }
 
     return (
-        <LangContext.Provider value={lang}>
-            <MainLayout>
+        <LangContext.Provider value={selectedLang}>
+            <MainLayout key={location.pathname}>
                 <HeroUnit title={module.title} />
-                <Cards options={options} />
+                <Cards options={module.options} />
                 <Content />
             </MainLayout>
         </LangContext.Provider>
     )
 }
+
+export default withRouter(Navigator)

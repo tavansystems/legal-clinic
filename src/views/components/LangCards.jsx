@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import Container from "@material-ui/core/Container";
@@ -8,7 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 
 import en from "../../lang/en.json";
 import fr from "../../lang/fr.json";
@@ -34,13 +34,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Cards() {
+export default function LangCards() {
   //   const [checked, setChecked] = useState(true)
-  const [lang, setLang] = useState(en)
   const classes = useStyles();
 
   return (
-    <LangContext.Provider value={lang}>
+    <LangContext.Provider value={en}>
       <Container className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
       {supportedLangs.map((lang, index) => (
@@ -55,13 +54,12 @@ export default function Cards() {
                 <Typography gutterBottom variant="h5" component="h2">
                   {lang.title}
                 </Typography>
-                {/* <Typography>
-                  This is a media card. You can use this section to describe the
-                  content.
-                </Typography> */}
+                <Typography>
+                  Description if there is one 
+                </Typography>
               </CardContent>
               <CardActions>
-                <Link href={window.location.href + lang.slug} onClick={() => console.log("he")}>
+                <Link to={"/" + lang.slug}>
                   <Button size="small" color="primary">
                     {lang.literals.choose}
                   </Button>

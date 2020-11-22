@@ -8,7 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
+import { Link, withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Cards({ options }) {
+function Cards({ options, location }) {
   //   const [checked, setChecked] = useState(true)
   const classes = useStyles();
 
@@ -39,8 +39,10 @@ export default function Cards({ options }) {
   return (
     <Container className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
-      {options.map((option, index) => (
+
+      {Object.entries(options).map(([key, option], index) => (
           <Grid item key={index} xs={12} sm={6} md={4}>
+
             <Card className={classes.card}>
               <CardMedia
                 className={classes.cardMedia}
@@ -57,7 +59,7 @@ export default function Cards({ options }) {
                 </Typography> */}
               </CardContent>
               <CardActions>
-                <Link href={window.location.href + "/" + option.slug}>
+                <Link to={location.pathname + "/" + key}>
                   <Button size="small" color="primary">
                     Choose
                   </Button>
@@ -74,3 +76,5 @@ export default function Cards({ options }) {
 Cards.defaultProps = {
   options: []
 };
+
+export default withRouter(Cards)
