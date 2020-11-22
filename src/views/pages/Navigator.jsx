@@ -46,7 +46,7 @@ function Navigator({ location, match }) {
 
     const parsePath = useCallback(
         () => {
-            let pathlist = path.split("/")
+            let pathlist = path ? path.split("/") : []
             let currentModule = selectedLang
             for (let slug of pathlist) {
                 if (currentModule.options[slug]) {
