@@ -9,7 +9,6 @@ import Navigator from './views/pages/Navigator'
 import Home from './views/pages/Home'
 import NotFound from './views/pages/NotFound'
 
-
 export default function App() {
     return (
         <Router>
