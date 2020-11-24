@@ -19,16 +19,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BreadCrumbs({path}) {
   const classes = useStyles();
-  const {title, literals} = useContext(LangContext)
+  const {literals} = useContext(LangContext)
   const currentTitle = path[path.length - 1] ? path[path.length - 1]['title'] : "Not Found"
-  // const currentTitle = (() => {
-  //   if(path[path.length - 1]){
-  //     return path[path.length - 1]['title']
-  //   } elseif (){
-
-  //   }
-  //   (path[path.length - 1] ? path[path.length - 1]['title'] : "404")
-  // })()
 
   return (
     <div className={classes.root}>
