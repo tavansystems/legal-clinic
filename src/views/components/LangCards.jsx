@@ -11,10 +11,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
 import en from "../../lang/en.json";
-import fr from "../../lang/fr.json";
 import LangContext from "../../utils/LangContext";
 
-const supportedLangs = [en, fr]
+const supportedLangs = [en]
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {

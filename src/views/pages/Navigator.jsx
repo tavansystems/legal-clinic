@@ -8,12 +8,10 @@ import ContentWrapper from "../components/ContentWrapper";
 import HeroUnit from "../components/HeroUnit";
 
 import en from "../../lang/en.json";
-import fr from "../../lang/fr.json";
 
 const supportedLangs = {
     options: {
-        en: en,
-        fr: fr
+        en: en
     }
 }
 
