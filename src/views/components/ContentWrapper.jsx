@@ -10,10 +10,8 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: theme.spacing(8),
         backgroundColor: "#3f51b5"
     },
-    card: {
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
+    column: {
+        width: "100%"
     }
 }));
 
@@ -26,12 +24,12 @@ function ContentWrapper({ sidebar, main }) {
 
     return (
         <Container className={classes.cardGrid} maxWidth="xl">
-            <Grid container className={classes.cardGrid} spacing={2}>
-                <Grid item xs={3}>
+            <Grid container className={classes.cardGrid} spacing={8}>
+                <Grid item md={3}>
                     <ContentCard content={sidebar} />
                 </Grid>
-                <Grid item xs={9}>
-                    <ContentCard content={main} />
+                <Grid item md={9}>
+                    <ContentCard className={classes.column}  content={main} />
                 </Grid>
             </Grid>
         </Container>

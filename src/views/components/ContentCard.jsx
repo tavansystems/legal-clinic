@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown'
+
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import { makeStyles } from "@material-ui/core/styles";
@@ -29,11 +31,10 @@ export default function ContentCard({ content }) {
         <Paper elevation={0} className={classes.paper}>
             <Typography
                 variant="h5"
-                align="center"
                 color="textSecondary"
                 paragraph
             >
-                {content}
+                <ReactMarkdown>{content}</ReactMarkdown>
             </Typography>
         </Paper>
     )

@@ -37,7 +37,7 @@ function Cards({ options, location }) {
   }
 
   return (
-    <Container className={classes.cardGrid} maxWidth="md">
+    <Container key={location.pathname} className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
 
       {Object.entries(options).map(([key, option], index) => (

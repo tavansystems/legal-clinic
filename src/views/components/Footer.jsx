@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Link from "@material-ui/core/Link";
+
+import LangContext from "../../utils/LangContext"
 
 const useStyles = makeStyles((theme) => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
-    },
+    }
 }));
 
 function Copyright() {
@@ -25,15 +28,25 @@ function Copyright() {
 
 export default function Footer() {
     const classes = useStyles();
+    const { literals } = useContext(LangContext);
+
     return (
         <footer className={classes.footer}>
-            <Typography variant="h6" align="center" gutterBottom>
-                Footer
-            </Typography>
-            <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                disclaimer
-            </Typography>
-            <Copyright />
+            <Grid container>
+                <Grid item xs="4"></Grid>
+                <Grid item xs="4">
+                    <Typography variant="h6" align="center" gutterBottom>
+                        Footer
+                    </Typography>
+                    <Typography spacing="10" variant="p" align="center" color="textSecondary" component="p">
+                        {literals.disclaimer}
+                    </Typography>
+                    <br />
+                    <Copyright />
+                </Grid>
+                <Grid item xs="4"></Grid>
+
+            </Grid>
         </footer>
     )
 }

@@ -32,11 +32,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function NotFound() {
+export default function NotFound(props) {
   const classes = useStyles();
+
   return (
     <MainLayout>
-      <HeroUnit />
+      <HeroUnit title="Page Not Found" breadCrumbs={[{title: "404", path: "/404"}]} />
       <Container className={classes.cardGrid} maxWidth="md">
         <Grid container spacing={4}>
             Page Not Found

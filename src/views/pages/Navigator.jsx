@@ -19,6 +19,7 @@ const supportedLangs = {
 
 function Navigator({ location, match }) {
     const [module, setModule] = useState({})
+    const [breadCrumbs, setBreadCrumbs] = useState([])
     const [notFound, setNotFound] = useState(false)
     const [selectedLang, setSelectedLang] = useState(supportedLangs.options.en)
 
@@ -26,24 +27,33 @@ function Navigator({ location, match }) {
 
     const parsePath = useCallback(
         () => {
-            let pathlist = path ? path.split("/") : []
+            const pathlist = path ? path.split("/") : []
+            const breadCrumbs = []
             let currentModule = selectedLang
+            let breadcrumbpath = "/" + lang
             for (let slug of pathlist) {
+                if(!currentModule.options){
+                    break
+                }
                 if (currentModule.options[slug]) {
+                    breadcrumbpath += "/" + slug
+                    breadCrumbs.push({title: currentModule.options[slug].title, path: breadcrumbpath})
                     currentModule = currentModule.options[slug]
                 } else {
                     setNotFound(true)
                 }
             }
+            setBreadCrumbs(breadCrumbs)
             setModule(currentModule)
         },
-        [path, selectedLang],
+        [path, lang, selectedLang],
     );
 
     const selectLang = useCallback(
         () => {
             if(supportedLangs.options[lang]){
                 setSelectedLang(supportedLangs.options[lang])
+                setBreadCrumbs([{title: lang.title, path: "/" + lang}])
             } else {
                 setNotFound(true)
             }
@@ -59,10 +69,10 @@ function Navigator({ location, match }) {
     return (
         <LangContext.Provider value={selectedLang}>
             <MainLayout key={location.pathname}>
-                <HeroUnit title={module.title} />
+                <HeroUnit title={module.title} breadCrumbs={breadCrumbs} />
+                <ContentWrapper sidebar="SIDEBAR" main={module.content} />
                 <Cards options={module.options} />
                 {notFound ? <Redirect to="/404" /> : null}
-                <ContentWrapper sidebar="SIDEBAR" main={module.content} />
             </MainLayout>
         </LangContext.Provider>
     )

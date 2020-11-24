@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 import MainLayout from "../layouts/MainLayout";
-import HeroUnit from "../components/HeroUnit";
+import LandingHeroUnit from "../components/LandingHeroUnit";
 import LangCards from "../components/LangCards";
 
 const useStyles = makeStyles((theme) => ({
@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <MainLayout>
-      <HeroUnit />
+      <LandingHeroUnit />
       <Container className={classes.cardGrid} maxWidth="md">
         {/* End hero unit */}
         <Grid container spacing={4}>

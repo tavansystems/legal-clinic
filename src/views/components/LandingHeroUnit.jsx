@@ -1,11 +1,9 @@
 import React from "react";
 
-import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-import BreadCrumbs from "./BreadCrumbs";
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -17,11 +15,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function HeroUnit({ title, breadCrumbs }) {
+export default function LandingHeroUnit({ title, breadCrumbs }) {
   const classes = useStyles();
   return (
     <div className={classes.heroContent}>
-      <Container maxWidth="md">
+      <Container maxWidth="sm">
         <Typography
           component="h1"
           variant="h2"
@@ -35,9 +33,7 @@ export default function HeroUnit({ title, breadCrumbs }) {
           DESC. PLACEHOLDER
         </Typography>
         <div className={classes.heroButtons}>
-          <Grid container spacing={2} justify="center">
-            <BreadCrumbs path={breadCrumbs} />
-          </Grid>
+
         </div>
       </Container>
     </div>
