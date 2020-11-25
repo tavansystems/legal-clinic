@@ -9,7 +9,7 @@ import LangContext from "../../utils/LangContext"
 const useStyles = makeStyles((theme) => ({
     footer: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(6),
+        padding: theme.spacing(6)
     }
 }));
 
@@ -31,7 +31,7 @@ export default function Footer() {
                     <br />
                     <Typography variant="body2" color="textSecondary" align="center">
                         {literals.copyright} ©
-                        <Link color="inherit" href="https://mfso.ca">
+                        <Link color="inherit" target="_BLANK" href="https://mfso.ca">
                             {' '}{literals.mfso}
                         </Link>{' '}
                         {new Date().getFullYear()}
@@ -39,7 +39,6 @@ export default function Footer() {
                     </Typography>
                 </Grid>
                 <Grid item xs={4}></Grid>
-
             </Grid>
         </footer>
     )
