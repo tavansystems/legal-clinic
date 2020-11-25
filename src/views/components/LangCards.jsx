@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
 import Grow from "@material-ui/core/Grow";
 import Container from "@material-ui/core/Container";
@@ -71,9 +70,9 @@ export default function LangCards() {
                         </Typography>
                       </CardContent>
                       <CardActions>
-                        <Button variant="contained" size="small" color="primary">
+                        <Typography color="primary" component="p">
                           {lang.literals.choose}
-                        </Button>
+                        </Typography>
                       </CardActions>
                     </Card>
                   </Link>
