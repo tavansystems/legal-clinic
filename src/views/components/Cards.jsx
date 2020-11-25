@@ -64,7 +64,7 @@ function Cards({ options, location }) {
                   <Card className={classes.card}>
                     <CardMedia
                       className={classes.cardMedia}
-                      image="https://source.unsplash.com/random"
+                      image="https://via.placeholder.com/265x150.webp"
                       title="Image title"
                     />
                     <CardContent className={classes.cardContent}>
