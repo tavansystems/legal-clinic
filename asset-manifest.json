@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/legal-clinic/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/legal-clinic/static/js/main.e489264d.chunk.js",
-    "main.js.map": "/legal-clinic/static/js/main.e489264d.chunk.js.map",
+    "main.js": "/legal-clinic/static/js/main.adb67729.chunk.js",
+    "main.js.map": "/legal-clinic/static/js/main.adb67729.chunk.js.map",
     "runtime-main.js": "/legal-clinic/static/js/runtime-main.03330546.js",
     "runtime-main.js.map": "/legal-clinic/static/js/runtime-main.03330546.js.map",
     "static/js/2.2dc2b938.chunk.js": "/legal-clinic/static/js/2.2dc2b938.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.03330546.js",
     "static/js/2.2dc2b938.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.e489264d.chunk.js"
+    "static/js/main.adb67729.chunk.js"
   ]
 }
