@@ -13,19 +13,6 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function Copyright() {
-    return (
-        <Typography variant="body2" color="textSecondary" align="center">
-            {'Copyright © '}
-            <Link color="inherit" href="/">
-                Legal Hub
-      </Link>{' '}
-            {new Date().getFullYear()}
-            {'.'}
-        </Typography>
-    );
-}
-
 export default function Footer() {
     const classes = useStyles();
     const { literals } = useContext(LangContext);
@@ -36,13 +23,20 @@ export default function Footer() {
                 <Grid item xs="4"></Grid>
                 <Grid item xs="4">
                     <Typography variant="h6" align="center" gutterBottom>
-                        Footer
+                        {literals.app_name}
                     </Typography>
                     <Typography spacing="10" variant="p" align="center" color="textSecondary" component="p">
                         {literals.disclaimer}
                     </Typography>
                     <br />
-                    <Copyright />
+                    <Typography variant="body2" color="textSecondary" align="center">
+                        {literals.copyright} ©
+                        <Link color="inherit" href="https://mfso.ca">
+                            {' '}{literals.mfso}
+                        </Link>{' '}
+                        {new Date().getFullYear()}
+                        {'.'}
+                    </Typography>
                 </Grid>
                 <Grid item xs="4"></Grid>
 
