@@ -29,9 +29,9 @@ export default function LandingHeroUnit({ title, breadCrumbs }) {
         >
           {title}
         </Typography>
-        <Typography variant="h5" align="center" color="textSecondary" paragraph>
+        {/* <Typography variant="h5" align="center" color="textSecondary" paragraph>
           DESC. PLACEHOLDER
-        </Typography>
+        </Typography> */}
         <div className={classes.heroButtons}>
 
         </div>
