@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/legal-clinic/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/legal-clinic/static/js/main.83d5e396.chunk.js",
-    "main.js.map": "/legal-clinic/static/js/main.83d5e396.chunk.js.map",
-    "runtime-main.js": "/legal-clinic/static/js/runtime-main.69782c0e.js",
-    "runtime-main.js.map": "/legal-clinic/static/js/runtime-main.69782c0e.js.map",
-    "static/js/2.90178ff4.chunk.js": "/legal-clinic/static/js/2.90178ff4.chunk.js",
-    "static/js/2.90178ff4.chunk.js.map": "/legal-clinic/static/js/2.90178ff4.chunk.js.map",
-    "static/js/3.cd34b6e3.chunk.js": "/legal-clinic/static/js/3.cd34b6e3.chunk.js",
-    "static/js/3.cd34b6e3.chunk.js.map": "/legal-clinic/static/js/3.cd34b6e3.chunk.js.map",
+    "main.js": "/legal-clinic/static/js/main.e489264d.chunk.js",
+    "main.js.map": "/legal-clinic/static/js/main.e489264d.chunk.js.map",
+    "runtime-main.js": "/legal-clinic/static/js/runtime-main.03330546.js",
+    "runtime-main.js.map": "/legal-clinic/static/js/runtime-main.03330546.js.map",
+    "static/js/2.2dc2b938.chunk.js": "/legal-clinic/static/js/2.2dc2b938.chunk.js",
+    "static/js/2.2dc2b938.chunk.js.map": "/legal-clinic/static/js/2.2dc2b938.chunk.js.map",
+    "static/js/3.9f60ecd1.chunk.js": "/legal-clinic/static/js/3.9f60ecd1.chunk.js",
+    "static/js/3.9f60ecd1.chunk.js.map": "/legal-clinic/static/js/3.9f60ecd1.chunk.js.map",
     "index.html": "/legal-clinic/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/legal-clinic/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.90178ff4.chunk.js.LICENSE.txt": "/legal-clinic/static/js/2.90178ff4.chunk.js.LICENSE.txt"
+    "static/js/2.2dc2b938.chunk.js.LICENSE.txt": "/legal-clinic/static/js/2.2dc2b938.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.69782c0e.js",
-    "static/js/2.90178ff4.chunk.js",
+    "static/js/runtime-main.03330546.js",
+    "static/js/2.2dc2b938.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.83d5e396.chunk.js"
+    "static/js/main.e489264d.chunk.js"
   ]
 }
