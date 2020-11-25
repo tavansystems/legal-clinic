@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-  },
+  }
 }));
 
 function Cards({ options, location }) {
@@ -78,9 +78,9 @@ function Cards({ options, location }) {
                 </Typography> */}
                     </CardContent>
                     <CardActions>
-                      <Button size="small" variant="contained" color="primary">
+                      <Typography color="primary" className={classes.choose} component="p">
                         {literals.choose}
-                      </Button>
+                      </Typography>
                     </CardActions>
                   </Card>
                 </CardActionArea>
