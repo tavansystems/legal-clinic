@@ -28,11 +28,10 @@ export default function ContentCard({ content }) {
     const classes = useStyles();
 
     return (
-        <Paper elevation={0} className={classes.paper}>
+        <Paper elevation={1} className={classes.paper}>
             <Typography
                 variant="h5"
                 color="textSecondary"
-                paragraph
             >
                 <ReactMarkdown>{content}</ReactMarkdown>
             </Typography>

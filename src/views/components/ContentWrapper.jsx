@@ -6,13 +6,9 @@ import ContentCard from "../components/ContentCard";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     cardGrid: {
-        paddingTop: theme.spacing(8),
-        paddingBottom: theme.spacing(8),
-        backgroundColor: "#3f51b5"
+        paddingTop: theme.spacing(6),
+        paddingBottom: theme.spacing(6)
     },
-    column: {
-        width: "100%"
-    }
 }));
 
 function ContentWrapper({ sidebar, main }) {
@@ -23,8 +19,8 @@ function ContentWrapper({ sidebar, main }) {
     }
 
     return (
-        <Container className={classes.cardGrid} maxWidth="xl">
-            <Grid container className={classes.cardGrid} spacing={8}>
+        <Container className={classes.cardGrid} maxWidth="lg">
+            <Grid container className={classes.cardGrid} spacing={5}>
                 <Grid item md={3}>
                     <ContentCard content={sidebar} />
                 </Grid>
