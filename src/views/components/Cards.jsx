@@ -26,6 +26,9 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  link: {
+    textDecoration: "none"
+  }
 }));
 
 function Cards({ options, location }) {
@@ -59,8 +62,8 @@ function Cards({ options, location }) {
                 </Typography> */}
               </CardContent>
               <CardActions>
-                <Link to={location.pathname + "/" + key}>
-                  <Button size="small" color="primary">
+                <Link className={classes.link} to={location.pathname + "/" + key}>
+                  <Button size="small" variant="contained"  color="primary">
                     Choose
                   </Button>
                 </Link>

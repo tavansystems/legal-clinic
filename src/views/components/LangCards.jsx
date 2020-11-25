@@ -11,6 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
 import en from "../../lang/en.json";
+
 import LangContext from "../../utils/LangContext";
 
 const supportedLangs = [en]
@@ -31,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
   cardContent: {
     flexGrow: 1,
   },
+  link: {
+    textDecoration: "none"
+  }
 }));
 
 export default function LangCards() {
@@ -58,8 +62,8 @@ export default function LangCards() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to={"/" + lang.slug}>
-                  <Button size="small" color="primary">
+                <Link className={classes.link} to={"/" + lang.slug}>
+                  <Button variant="contained" size="small" color="primary">
                     {lang.literals.choose}
                   </Button>
                 </Link>

@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import { Link } from 'react-router-dom';
 
 import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
@@ -14,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(2),
     },
   },
+  link: {
+    textDecoration: "none"
+  }
 }));
 
 
@@ -25,11 +29,11 @@ export default function BreadCrumbs({path}) {
   return (
     <div className={classes.root}>
       <Breadcrumbs separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
-        <Link color="inherit" to="/">
+        <Link className={classes.link} color="inherit" to="/">
           {literals.home}
         </Link>
         {path.slice(0, path.length -1).map(link => (
-          <Link key={link.path} to={link.path} color="inherit">
+          <Link className={classes.link} key={link.path} to={link.path} color="inherit">
             {link.title}
           </Link>)
         )}
