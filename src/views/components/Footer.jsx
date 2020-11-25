@@ -20,8 +20,8 @@ export default function Footer() {
     return (
         <footer className={classes.footer}>
             <Grid container>
-                <Grid item xs={4}></Grid>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={4}></Grid>
+                <Grid item xs={12} md={4}>
                     <Typography variant="h6" align="center" gutterBottom>
                         {literals.app_name}
                     </Typography>
@@ -38,7 +38,7 @@ export default function Footer() {
                         {'.'}
                     </Typography>
                 </Grid>
-                <Grid item xs={4}></Grid>
+                <Grid item xs={12} md={4}></Grid>
             </Grid>
         </footer>
     )
