@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function BreadCrumbs({path}) {
   const classes = useStyles();
-  const {literals} = useContext(LangContext)
+  const { literals } = useContext(LangContext)
   const currentTitle = path[path.length - 1] ? path[path.length - 1]['title'] : "Not Found"
 
   return (
