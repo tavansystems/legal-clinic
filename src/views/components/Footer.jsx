@@ -20,12 +20,12 @@ export default function Footer() {
     return (
         <footer className={classes.footer}>
             <Grid container>
-                <Grid item xs="4"></Grid>
-                <Grid item xs="4">
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
                     <Typography variant="h6" align="center" gutterBottom>
                         {literals.app_name}
                     </Typography>
-                    <Typography spacing="10" variant="p" align="center" color="textSecondary" component="p">
+                    <Typography spacing="10" align="center" color="textSecondary" component="p">
                         {literals.disclaimer}
                     </Typography>
                     <br />
@@ -38,7 +38,7 @@ export default function Footer() {
                         {'.'}
                     </Typography>
                 </Grid>
-                <Grid item xs="4"></Grid>
+                <Grid item xs={4}></Grid>
 
             </Grid>
         </footer>
