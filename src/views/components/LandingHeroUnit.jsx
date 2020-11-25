@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
+import Grow from '@material-ui/core/Grow';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -17,25 +17,33 @@ const useStyles = makeStyles((theme) => ({
 
 export default function LandingHeroUnit({ title, breadCrumbs }) {
   const classes = useStyles();
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    setChecked(true)
+  }, [setChecked])
+
   return (
-    <div className={classes.heroContent}>
-      <Container maxWidth="sm">
-        <Typography
-          component="h1"
-          variant="h2"
-          align="center"
-          color="textPrimary"
-          gutterBottom
-        >
-          {title}
-        </Typography>
-        {/* <Typography variant="h5" align="center" color="textSecondary" paragraph>
+    <Grow in={checked} timeout={1000}>
+      <div className={classes.heroContent}>
+        <Container maxWidth="sm">
+          <Typography
+            component="h1"
+            variant="h2"
+            align="center"
+            color="textPrimary"
+            gutterBottom
+          >
+            {title}
+          </Typography>
+          {/* <Typography variant="h5" align="center" color="textSecondary" paragraph>
           DESC. PLACEHOLDER
         </Typography> */}
-        <div className={classes.heroButtons}>
+          <div className={classes.heroButtons}>
 
-        </div>
-      </Container>
-    </div>
+          </div>
+        </Container>
+      </div>
+    </Grow>
   );
 }

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
 import Card from "@material-ui/core/Card";
+import Grow from "@material-ui/core/Grow";
 import Container from "@material-ui/core/Container";
 import CardActions from "@material-ui/core/CardActions";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -39,45 +40,51 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function LangCards() {
-  //   const [checked, setChecked] = useState(true)
   const classes = useStyles();
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    setChecked(true)
+  }, [setChecked])
 
   return (
     <LangContext.Provider value={en}>
       <Container className={classes.cardGrid} maxWidth="md">
-      <Grid container spacing={4}>
-      {supportedLangs.map((lang, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
-            <CardActionArea>
-            <Link className={classes.link} to={"/" + lang.slug}>
+        <Grid container spacing={4}>
+          {supportedLangs.map((lang, index) => (
+            <Grid item key={index} xs={12} sm={6} md={4}>
+              <Grow in={checked} timeout={1000}>
+                <CardActionArea>
+                  <Link className={classes.link} to={"/" + lang.slug}>
+                    <Card className={classes.card}>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image="https://source.unsplash.com/random"
+                        title="Image title"
+                      />
+                      <CardContent className={classes.cardContent}>
+                        <Typography gutterBottom variant="h5" component="h2">
+                          {lang.title}
+                        </Typography>
+                        <Typography>
+                          Description if there is one
+                        </Typography>
+                      </CardContent>
+                      <CardActions>
+                        <Button variant="contained" size="small" color="primary">
+                          {lang.literals.choose}
+                        </Button>
+                      </CardActions>
+                    </Card>
+                  </Link>
 
-            <Card className={classes.card}>
-              <CardMedia
-                className={classes.cardMedia}
-                image="https://source.unsplash.com/random"
-                title="Image title"
-              />
-              <CardContent className={classes.cardContent}>
-                <Typography gutterBottom variant="h5" component="h2">
-                  {lang.title}
-                </Typography>
-                <Typography>
-                  Description if there is one 
-                </Typography>
-              </CardContent>
-              <CardActions>
-                  <Button variant="contained" size="small" color="primary">
-                    {lang.literals.choose}
-                  </Button>
-              </CardActions>
-            </Card>
-            </Link>
+                </CardActionArea>
+              </Grow>
 
-            </CardActionArea>
-          </Grid>
-      ))}
-      </Grid>
-    </Container>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
     </LangContext.Provider>
   );
 }
