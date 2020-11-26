@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   link: {
-    textDecoration: "none"
+    textDecoration: "none",
+    color: theme.palette.primary.main
   }
 }));
 
@@ -32,7 +33,7 @@ export default function BreadCrumbs({path}) {
           {literals.home}
         </Link>
         {path.slice(0, path.length -1).map(link => (
-          <Link className={classes.link} key={link.path} to={link.path} color="inherit">
+          <Link className={classes.link} key={link.path} to={link.path}>
             {link.title}
           </Link>)
         )}
