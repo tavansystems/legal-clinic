@@ -65,9 +65,9 @@ export default function LangCards() {
                         <Typography gutterBottom variant="h5" component="h2">
                           {lang.title}
                         </Typography>
-                        <Typography>
+                        {/* <Typography>
                           Description if there is one
-                        </Typography>
+                        </Typography> */}
                       </CardContent>
                       <CardActions>
                         <Typography color="primary" component="p">

@@ -13,7 +13,11 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(8, 0, 9),
   },
   welcome: {
-    marginBottom: "0px"
+    marginBottom: "0px",
+    fontSize: "3.75rem",
+  },
+  chooseLang: {
+    fontSize: "1.5rem"
   }
 }));
 
@@ -33,12 +37,22 @@ export default function LandingHeroUnit({ title, breadCrumbs }) {
           <Typography
             className={classes.welcome}
             component="h1"
-            variant="h2"
+            variant="h1"
             align="center"
             color="textPrimary"
             gutterBottom
           >
             {literals.welcome}
+          </Typography>
+          <Typography
+            className={classes.chooseLang}
+            component="h2"
+            variant="h2"
+            align="center"
+            color="textSecondary"
+            gutterBottom
+          >
+            {literals.choose_lang}
           </Typography>
         </Container>
       </div>
