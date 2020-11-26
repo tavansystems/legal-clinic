@@ -33,7 +33,7 @@ export default function HeroUnit({ title, breadCrumbs }) {
         <Container maxWidth="md">
           <Typography
             component="h1"
-            variant="h2"
+            variant="h4"
             align="center"
             color="textPrimary"
             gutterBottom

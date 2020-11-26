@@ -14,10 +14,6 @@ const useStyles = makeStyles((theme) => ({
   },
   welcome: {
     marginBottom: "0px",
-    fontSize: "3.75rem",
-  },
-  chooseLang: {
-    fontSize: "1.5rem"
   }
 }));
 
@@ -37,7 +33,7 @@ export default function LandingHeroUnit({ title, breadCrumbs }) {
           <Typography
             className={classes.welcome}
             component="h1"
-            variant="h1"
+            variant="h2"
             align="center"
             color="textPrimary"
             gutterBottom
@@ -47,7 +43,7 @@ export default function LandingHeroUnit({ title, breadCrumbs }) {
           <Typography
             className={classes.chooseLang}
             component="h2"
-            variant="h2"
+            variant="h4"
             align="center"
             color="textSecondary"
             gutterBottom
