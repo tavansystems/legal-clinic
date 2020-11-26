@@ -2,6 +2,11 @@
 
 The multilingual online legal clinic is an online initiative commissioned and organized by [Muslim Family Services of Ottawa](https://mfso.ca), developed and integrated by [Tavan Systems Inc.](https://tavansystems.com) and supported by [The Law Foundation of Ontario](https://lawfoundation.on.ca/). This online multilingual legal resource hub will be an invaluable resource for the Ottawa community, due to the ongoing lack of linguistically appropriate materials on everyday legal matters. 
 
+## Live App
+You may visit the app at the following address.
+
+- https://legal-clinic.mfso.ca/
+
 ## Disclaimer
 The information displayed and stored on the platform are general fact sheets and are not to be constituted as legal advice or any kind of legal document. The Muslim Legal Clinic will not be held liable for any mistake or loss incurred to you as a result of your reliance on these fact sheets.
 
