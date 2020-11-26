@@ -12,7 +12,7 @@ The information displayed and stored on the platform are general fact sheets and
 4. Run ```$ npm start``` if you use npm, or ```yarn start``` if you use yarn.
 
 ## Add A Language
-If you would like to volunteer or sponsor this project by adding a language to this tool, you may do so by downloading and alternating the [english langauge file](https://github.com/tavansystems/legal-clinic/blob/main/src/lang/en.json). You may contact us regarding this issue through the methods mentioned below.
+If you would like to volunteer or sponsor this project by adding a language to this tool, you may do so by downloading and alternating the [english language file](https://github.com/tavansystems/legal-clinic/blob/main/src/lang/en.json). You may contact us regarding this issue through the methods mentioned below.
 
 ## Recommendations and Advice
 Recommendations, advice, bugs and feature requests are open to the public and are greatly appreciated. You may creat an issue under the [Issues tab](https://github.com/tavansystems/legal-clinic/issues) if you have a GitHub account. If you do not have a GitHub, you may submit your issue through the [Tavan System's contact form](https://tavansystems.com/contact).
