@@ -7,20 +7,13 @@ import Cards from "../components/Cards"
 import ContentWrapper from "../components/ContentWrapper";
 import HeroUnit from "../components/HeroUnit";
 
-import en from "../../lang/en.json";
-
-const supportedLangs = {
-    options: {
-        en: en
-    }
-}
+import SupportedLanguages from '../../utils/SupportedLanguages';
 
 function Navigator({ location, match }) {
     const [module, setModule] = useState({})
     const [breadCrumbs, setBreadCrumbs] = useState([])
     const [notFound, setNotFound] = useState(false)
-    const [selectedLang, setSelectedLang] = useState(supportedLangs.options.en)
-
+    const [selectedLang, setSelectedLang] = useState(SupportedLanguages.en)
     const { path, lang } = match.params
 
     const parsePath = useCallback(
@@ -49,8 +42,8 @@ function Navigator({ location, match }) {
 
     const selectLang = useCallback(
         () => {
-            if(supportedLangs.options[lang]){
-                setSelectedLang(supportedLangs.options[lang])
+            if(SupportedLanguages[lang]){
+                setSelectedLang(SupportedLanguages[lang])
                 setBreadCrumbs([{title: lang.title, path: "/" + lang}])
             } else {
                 setNotFound(true)
