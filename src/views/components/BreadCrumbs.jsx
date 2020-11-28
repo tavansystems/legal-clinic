@@ -28,7 +28,7 @@ export default function BreadCrumbs({path}) {
 
   return (
     <div className={classes.root}>
-      <Breadcrumbs maxItems={3} separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
+      <Breadcrumbs maxItems={4} separator={<NavigateNextIcon fontSize="small" />} aria-label="breadcrumb">
         <Link className={classes.link} color="inherit" to="/">
           {literals.home}
         </Link>
