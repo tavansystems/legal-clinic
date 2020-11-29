@@ -2,8 +2,9 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { makeStyles } from "@material-ui/core/styles";
+import ReactMarkdown from 'react-markdown';
 
+import { makeStyles } from "@material-ui/core/styles";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
@@ -49,9 +50,9 @@ export default function SearchResultList({ results }) {
                             className={classes.title}
                             primary={result.title}
                             secondary={
-                                <React.Fragment>
-                                   {result.content !== null ? result.content.slice(0, 100) + "..." : ""}
-                                </React.Fragment>
+                                <ReactMarkdown>
+                                   {result.content !== null ? result.content.slice(0, 100)+ "..." : ""}
+                                </ReactMarkdown>
                             }
                         />
                     </ListItem>
