@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     listRoot: {
         position: 'absolute',
         width: '100%',
-        maxWidth: '36ch',
+        maxWidth: '70ch',
         backgroundColor: theme.palette.background.paper,
     },
     inline: {
