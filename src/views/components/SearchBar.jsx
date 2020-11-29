@@ -43,6 +43,12 @@ export default function Header() {
     const [searchValue, setSearchValue] = useState("")
     const { literals } = useContext(LangContext);
 
+    const optionsFilter = option => {
+        const searchValLowerCase = searchValue.toLowerCase()
+        if(option.content !== null) return option.content.toLowerCase().includes(searchValLowerCase)
+        return option.title.toLowerCase().includes(searchValLowerCase)
+    }
+
     return (
         <div>
             <div className={classes.searchIcon}>
@@ -60,7 +66,7 @@ export default function Header() {
             />
             {
                 searchValue.length > 0
-                    ? <SearchResultList results={NavigatorOptions.filter(option => option.title.toLowerCase().includes(searchValue.toLowerCase()))} />
+                    ? <SearchResultList results={NavigatorOptions.filter(optionsFilter)} />
                     : <></>
             }
         </div>
