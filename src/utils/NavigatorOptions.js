@@ -3,8 +3,7 @@ import SupportedLanguages from './SupportedLanguages';
 let url
 const optionList = []
 const mapOptions = (options, path = "/") => {
-    const optionkeys = Object.keys(options)
-    for (let key of optionkeys) {
+    for (let key in options) {
         url = (path !== "/" ? path : "") + "/" + key
         optionList.push({
             title: options[key].title,
