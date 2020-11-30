@@ -14,6 +14,7 @@ function Navigator({ location, match }) {
     const [breadCrumbs, setBreadCrumbs] = useState([])
     const [notFound, setNotFound] = useState(false)
     const [selectedLang, setSelectedLang] = useState(SupportedLanguages.en)
+    const [sideBarListState, setSideBarListState] = useState([])
     const { path, lang } = match.params
 
     const parsePath = useCallback(
@@ -22,8 +23,21 @@ function Navigator({ location, match }) {
             const breadCrumbs = []
             let currentModule = selectedLang
             let breadcrumbpath = "/" + lang
+            const finalParent = pathlist[pathlist.length - 1]
             for (let slug of pathlist) {
-                if(!currentModule.options){
+                if (finalParent === slug) {
+                    let sideBarList = []
+                    for (let key in currentModule.options){
+                        if(finalParent !== key){
+                            sideBarList.push({
+                                title: currentModule.options[key].title,
+                                path: key
+                            })
+                        }
+                    }
+                    setSideBarListState(sideBarList)
+                }
+                if (!currentModule.options) {
                     break
                 }
                 if (currentModule.options[slug]) {
@@ -61,7 +75,7 @@ function Navigator({ location, match }) {
         <LangContext.Provider value={selectedLang}>
             <MainLayout key={location.pathname}>
                 <HeroUnit title={module.title} breadCrumbs={breadCrumbs} />
-                <ContentWrapper sidebar="SIDEBAR" main={module.content} />
+                <ContentWrapper sideBarList={sideBarListState} main={module.content} />
                 <Cards options={module.options} />
                 {notFound ? <Redirect to="/404" /> : null}
             </MainLayout>
