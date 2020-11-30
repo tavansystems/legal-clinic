@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 export default function BreadCrumbs({path}) {
   const classes = useStyles();
   const { literals } = useContext(LangContext)
-  const currentTitle = path[path.length - 1] ? path[path.length - 1]['title'] : "Not Found"
+  const currentTitle = path[path.length - 1] ? path[path.length - 1]['title'] : null
 
   return (
     <div className={classes.root}>
@@ -32,12 +32,16 @@ export default function BreadCrumbs({path}) {
         <Link className={classes.link} color="inherit" to="/">
           {literals.home}
         </Link>
-        {path.slice(0, path.length -1).map(link => (
-          <Link className={classes.link} key={link.path} to={link.path}>
-            {link.title}
-          </Link>)
-        )}
-        <Typography color="textPrimary">{currentTitle}</Typography>
+        {
+          currentTitle && path.slice(0, path.length -1).map(link => (
+            <Link className={classes.link} key={link.path} to={link.path}>
+              {link.title}
+            </Link>)
+          )
+        }
+        {
+          currentTitle && <Typography color="textPrimary">{currentTitle}</Typography>
+        }
       </Breadcrumbs>
     </div>
   );
