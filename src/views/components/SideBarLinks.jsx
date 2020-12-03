@@ -25,7 +25,8 @@ function SideBarLinks({ links }) {
     
     useEffect(() => {
         setChecked(true)
-      }, [setChecked])
+    }, [setChecked])
+      
     return (
         <Grow in={checked} timeout={1000}>
         <Paper elevation={1}>
