@@ -16,7 +16,11 @@ const useStyles = makeStyles((theme) => ({
         textDecoration: "none"
     },
     sidebar: {
-        width: "100%"
+        width: "100%",
+        padding: theme.spacing(1), 
+    },
+    column: {
+        padding: theme.spacing(1), 
     }
 }));
 
@@ -29,9 +33,9 @@ function ContentWrapper({ sideBarList, main }) {
 
     return (
         <Container className={classes.cardGrid} maxWidth="lg">
-            <Grid container className={classes.cardGrid}>
-                <Grid item md={9}>
-                    <ContentCard className={classes.column} content={main} />
+            <Grid container>
+                <Grid item md={9} className={classes.column}>
+                    <ContentCard content={main} />
                 </Grid>
                 <Grid item md={3} className={classes.sidebar}>
                     <SideBarLinks links={sideBarList} /> 
