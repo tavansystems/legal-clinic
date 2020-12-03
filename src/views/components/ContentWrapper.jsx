@@ -9,7 +9,11 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     cardGrid: {
         paddingTop: theme.spacing(6),
-        paddingBottom: theme.spacing(6)
+        paddingBottom: theme.spacing(6),
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: theme.spacing(1),
+            paddingBottom: theme.spacing(1),
+        },
     },
     link: {
         color: theme.palette.primary.main,
