@@ -21,10 +21,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(0, 1),
         '&:hover': {
             backgroundColor: fade(theme.palette.common.white, 0.25),
-        },
-        [theme.breakpoints.down('sm')]: {
-            display: "none"
-        },
+        }
     },
 }));
 
