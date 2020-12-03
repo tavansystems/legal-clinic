@@ -1,6 +1,7 @@
 {
     "title": "English",
     "slug": "en",
+    "icon": "/img/flags/canada-flag-round-icon-16.png",
     "literals": {
         "home": "Home",
         "app_name": "Legal Hub",

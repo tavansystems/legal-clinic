@@ -9,7 +9,7 @@ const theme = createMuiTheme({
     primary: {
       main: "#0c9d4a",
     }
-  },
+  }
 });
 
 ReactDOM.render(
