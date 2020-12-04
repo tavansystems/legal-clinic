@@ -70,11 +70,11 @@ function Navigator({ location, match }) {
         selectLang();
         parsePath();
     }, [location.pathname, parsePath, selectLang]);
-
+    
     return (
         <LangContext.Provider value={selectedLang}>
             <MainLayout key={location.pathname}>
-                <HeroUnit title={module.title} breadCrumbs={breadCrumbs} />
+                <HeroUnit title={path ? module.title : selectedLang.literals.how_can_we_help} breadCrumbs={breadCrumbs} />
                 <ContentWrapper sideBarList={sideBarListState} main={module.content} />
                 <Cards options={module.options} />
                 {notFound ? <Redirect to="/404" /> : null}
