@@ -61,7 +61,7 @@ function LanguageSelector({location}) {
             </MenuItem>
             {Object.keys(SupportedLanguages).map(lang => (
                 <MenuItem to={"/" + SupportedLanguages[lang].slug} component={Link} key={SupportedLanguages[lang].slug} value={SupportedLanguages[lang].slug}>
-                    <img className={classes.langIcon} src={SupportedLanguages[lang].icon} alt={SupportedLanguages[lang].title} />
+                    <PublicIcon className={classes.langIcon} />
                     <Typography className={classes.selectOption}>
                         {SupportedLanguages[lang].title}
                     </Typography>
