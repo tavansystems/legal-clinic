@@ -51,7 +51,7 @@ function LanguageSelector() {
         <Select
             labelId="lang-selector"
             id="lang-selector"
-            value={lang === "/" ? "None" : slug}
+            value={lang === "" ? "None" : slug}
             label="Language"
             classes={{ nativeInput: classes.inputInput, select: classes.select}}
             disableUnderline
