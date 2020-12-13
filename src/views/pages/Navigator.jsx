@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { withRouter, Redirect } from 'react-router-dom';
 
 import LangContext from "../../utils/LangContext";
+import PathContext from "../../utils/PathContext";
 import MainLayout from '../layouts/MainLayout';
 import Cards from "../components/Cards"
 import ContentWrapper from "../components/ContentWrapper";
@@ -72,14 +73,16 @@ function Navigator({ location, match }) {
     }, [location.pathname, parsePath, selectLang]);
     
     return (
-        <LangContext.Provider value={selectedLang}>
-            <MainLayout key={location.pathname}>
-                <HeroUnit title={path ? module.title : selectedLang.literals.how_can_we_help} breadCrumbs={breadCrumbs} />
-                <ContentWrapper sideBarList={sideBarListState} main={module.content} />
-                <Cards options={module.options} />
-                {notFound ? <Redirect to="/404" /> : null}
-            </MainLayout>
-        </LangContext.Provider>
+        <PathContext.Provider value={match.params}>
+            <LangContext.Provider value={selectedLang}>
+                <MainLayout key={location.pathname}>
+                    <HeroUnit title={path ? module.title : selectedLang.literals.how_can_we_help} breadCrumbs={breadCrumbs} />
+                    <ContentWrapper sideBarList={sideBarListState} main={module.content} />
+                    <Cards options={module.options} />
+                    {notFound ? <Redirect to="/404" /> : null}
+                </MainLayout>
+            </LangContext.Provider>
+        </PathContext.Provider>
     )
 }
 

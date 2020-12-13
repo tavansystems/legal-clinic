@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { makeStyles } from "@material-ui/core/styles";
 import Select from "@material-ui/core/Select";
@@ -8,7 +8,9 @@ import Typography from "@material-ui/core/Typography";
 import PublicIcon from '@material-ui/icons/Public';
 
 import SupportedLanguages from '../../utils/SupportedLanguages';
-import LangContext from "../../utils/LangContext"
+import LangContext from "../../utils/LangContext";
+import PathContext from "../../utils/PathContext";
+
 
 const useStyles = makeStyles((theme) => ({
     langIcon: {
@@ -40,15 +42,16 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function LanguageSelector({location}) {
-    const classes = useStyles();
+function LanguageSelector() {
+    const classes = useStyles()
     const { slug } = useContext(LangContext)
+    const { lang, path } = useContext(PathContext)
 
     return (
         <Select
             labelId="lang-selector"
             id="lang-selector"
-            value={location.pathname === "/" ? "None" : slug}
+            value={lang === "/" ? "None" : slug}
             label="Language"
             classes={{ nativeInput: classes.inputInput, select: classes.select}}
             disableUnderline
@@ -60,7 +63,7 @@ function LanguageSelector({location}) {
                 </Typography>    
             </MenuItem>
             {Object.keys(SupportedLanguages).map(lang => (
-                <MenuItem to={"/" + SupportedLanguages[lang].slug} component={Link} key={SupportedLanguages[lang].slug} value={SupportedLanguages[lang].slug}>
+                <MenuItem to={"/" + SupportedLanguages[lang].slug + "/" + path} component={Link} key={SupportedLanguages[lang].slug} value={SupportedLanguages[lang].slug}>
                     <PublicIcon className={classes.langIcon} />
                     <Typography className={classes.selectOption}>
                         {SupportedLanguages[lang].title}
@@ -71,6 +74,6 @@ function LanguageSelector({location}) {
     )
 }
 
-export default withRouter(LanguageSelector)
+export default LanguageSelector
 
 
