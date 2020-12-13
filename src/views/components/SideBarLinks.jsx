@@ -22,31 +22,31 @@ const useStyles = makeStyles((theme) => ({
 function SideBarLinks({ links }) {
     const classes = useStyles();
     const [checked, setChecked] = useState(false)
-    
+
     useEffect(() => {
         setChecked(true)
     }, [setChecked])
-      
+
     return (
         <Grow in={checked} timeout={1000}>
-        <Paper elevation={1}>
-            <List>
-                {links.map(item => (
-                    <Link className={classes.link} to={item.path} key={item.path}>
-                        <ListItem button>
-                            <ListItemAvatar>
-                                <Avatar>
-                                    <LinkIcon />
-                                </Avatar>
-                            </ListItemAvatar>
-                            <ListItemText
-                                primary={item.title}
-                            />
-                        </ListItem>
-                    </Link>
-                ))}
-            </List>
-        </Paper>
+            <Paper elevation={1}>
+                <List>
+                    {links.map(item => (
+                        <Link className={classes.link} to={item.path} key={item.path}>
+                            <ListItem button>
+                                <ListItemAvatar>
+                                    <Avatar>
+                                        <LinkIcon />
+                                    </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText
+                                    primary={item.title}
+                                />
+                            </ListItem>
+                        </Link>
+                    ))}
+                </List>
+            </Paper>
         </Grow>
     )
 }
