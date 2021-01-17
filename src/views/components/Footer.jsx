@@ -46,11 +46,12 @@ export default function Footer() {
                     <br />
                     <Typography variant="body2" color="textSecondary" align="center">
                         {literals.copyright} © {' '}
-                        <Link color="inherit" target="_BLANK" href="https://mfso.ca">
-                            {literals.mfso}
+                        <Link color="inherit" target="_BLANK" href={literals.app_org_link}>
+                            {literals.org_name}
                         </Link>{' '}
                         {new Date().getFullYear()}
                         {'.'}
+                        {literals.developed_by} <Link href="https://tavansystems.com" target="_BLANK" rel="noreferrer">Tavan Systems Inc.</Link>
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={4}></Grid>

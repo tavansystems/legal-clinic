@@ -4,14 +4,16 @@
     "literals": {
         "home": "Home",
         "app_name": "Legal Hub",
+        "app_org_link": "https://mfso.ca",
         "disclaimer": "Disclaimer: The following are general fact sheets and are not to be constituted as legal advice or any kind of legal document. The Muslim Legal Clinic will not be held liable for any mistake or loss incurred to you as a result of your reliance on these fact sheets.",
         "choose": "Choose",
         "copyright": "Copyright",
         "welcome": "Welcome",
         "how_can_we_help": "How can we help you today?",
-        "mfso": "Muslim Family Services of Ottawa",
+        "org_name": "Muslim Family Services of Ottawa",
         "choose_lang": "Choose a Language",
-        "search": "Search"
+        "search": "Search",
+        "developed_by": "Developed by"
     },
     "options": {
         "education": {
