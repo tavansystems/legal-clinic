@@ -60,11 +60,11 @@ function Cards({ options, location }) {
                         <Grow in={checked} timeout={1000}>
                             <CardActionArea className={classes.link} to={location.pathname + "/" + key} component={Link}>
                                 <Card className={classes.card}>
-                                    <CardMedia
+                                    {/* <CardMedia
                                         className={classes.cardMedia}
                                         image="https://via.placeholder.com/265x150.webp"
                                         title="Image title"
-                                    />
+                                    /> */}
                                     <CardContent className={classes.cardContent}>
                                         <Typography gutterBottom variant="h5" component="h2">
                                             {option.title}
