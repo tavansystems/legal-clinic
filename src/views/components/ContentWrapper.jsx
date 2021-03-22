@@ -1,6 +1,11 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { ReactTinyLink } from 'react-tiny-link'
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
+import Grow from '@material-ui/core/Grow';
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import PublicIcon from '@material-ui/icons/Public';
 
 import SideBarLinks from "./SideBarLinks"
 import ContentCard from "./ContentCard";
@@ -21,15 +26,32 @@ const useStyles = makeStyles((theme) => ({
     },
     sidebar: {
         width: "100%",
-        padding: theme.spacing(1), 
+        padding: theme.spacing(1),
     },
     column: {
-        padding: theme.spacing(1), 
+        padding: theme.spacing(1),
+    },
+    paper: {
+        margin: theme.spacing(0, 0, 5, 0),
+        display: "flex",
+        flexDirection: "column",
+        [theme.breakpoints.down('sm')]: {
+            padding: theme.spacing(2),
+        },
+    },
+    sourceTitle: {
+        padding: theme.spacing(5),
+        color: "black"
     }
 }));
 
-function ContentWrapper({ sideBarList, main }) {
+function ContentWrapper({ sideBarList, main, sources }) {
     const classes = useStyles();
+    const [checked, setChecked] = useState(false)
+
+    useEffect(() => {
+        setChecked(true)
+    }, [setChecked])
 
     if (!main) {
         return (<></>)
@@ -40,9 +62,35 @@ function ContentWrapper({ sideBarList, main }) {
             <Grid container>
                 <Grid item md={9} className={classes.column}>
                     <ContentCard content={main} />
+                    <Grow in={checked} timeout={1000}>
+                        <Paper elevation={1} className={classes.paper}>
+                            <Typography variant="h5"
+                                color="textSecondary" className={classes.sourceTitle} style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    flexWrap: 'wrap',
+                                }}>
+                                <PublicIcon style={{ marginRight: "10px" }} />
+
+                                <span>Sources</span>
+                            </Typography>
+                            {sources.map((source) => (
+                                <ReactTinyLink
+                                    key={source}
+                                    cardSize="small"
+                                    showGraphic={true}
+                                    maxLine={5}
+                                    minLine={3}
+                                    width={1}
+                                    url={source}
+                                />
+                            ))}
+                        </Paper>
+                    </Grow>
+
                 </Grid>
                 <Grid item md={3} className={classes.sidebar}>
-                    <SideBarLinks links={sideBarList} /> 
+                    <SideBarLinks links={sideBarList} />
                 </Grid>
             </Grid>
         </Container>

@@ -9,6 +9,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     paper: {
         padding: theme.spacing(5),
+        margin: theme.spacing(0, 0, 5, 0),
         display: "flex",
         flexDirection: "column",
         [theme.breakpoints.down('sm')]: {

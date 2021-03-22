@@ -77,7 +77,7 @@ function Navigator({ location, match }) {
             <LangContext.Provider value={selectedLang}>
                 <MainLayout key={location.pathname}>
                     <HeroUnit title={path ? module.title : selectedLang.literals.how_can_we_help} breadCrumbs={breadCrumbs} />
-                    <ContentWrapper sideBarList={sideBarListState} main={module.content} />
+                    <ContentWrapper sideBarList={sideBarListState} main={module.content} sources={module.sources} />
                     <Cards options={module.options} />
                     {notFound ? <Redirect to="/404" /> : null}
                 </MainLayout>
