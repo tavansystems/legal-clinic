@@ -10,8 +10,7 @@ fs.readFile('lang/en.md', 'utf8', function(err, data) {
         url = m2[2]
         path = url.replace("https://legal-clinic.mfso.ca/#/", "").split("/")
 
-        // content = m2[4].replace(/Sources:\n((?:\r?\n(?!#).*)*)/, "")
-        content = m2[4]
+        content = m2[4].replace(/Sources:\n((?:\r?\n(?!#).*)*)/, "")
         sources = m2[4].match(/\* \[(.*)\]/g)
         let sourcelist = []
         if(sources){
