@@ -83,6 +83,7 @@ function ContentWrapper({ sideBarList, main, sources }) {
                                     minLine={3}
                                     width={1}
                                     url={source}
+                                    proxyUrl="https://cors.bridged.cc"
                                 />
                             ))}
                         </Paper>
