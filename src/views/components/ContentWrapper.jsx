@@ -79,8 +79,8 @@ function ContentWrapper({ sideBarList, main, sources }) {
                                     key={source}
                                     cardSize="small"
                                     showGraphic={true}
-                                    maxLine={5}
-                                    minLine={3}
+                                    maxLine={3}
+                                    minLine={1}
                                     width={1}
                                     url={source}
                                     proxyUrl="https://cors.bridged.cc"
