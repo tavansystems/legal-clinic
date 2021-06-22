@@ -52,6 +52,7 @@ for (let file of files) {
             function (err, data) {
                 let langfile = JSON.parse(data);
                 let langTitle = langfile["title"];
+                langfile["options"] = navigator["options"][langSlug]["options"];
                 fs.writeFile(
                     "src/lang/" + langSlug + ".json",
                     JSON.stringify(langfile),
