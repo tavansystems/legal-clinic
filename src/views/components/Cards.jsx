@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 
 import Card from "@material-ui/core/Card";
-import Grow from '@material-ui/core/Grow';
+import Grow from "@material-ui/core/Grow";
 import Container from "@material-ui/core/Container";
 import CardActions from "@material-ui/core/CardActions";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -32,17 +32,17 @@ const useStyles = makeStyles((theme) => ({
     },
     link: {
         textDecoration: "none",
-    }
+    },
 }));
 
 function Cards({ options, location }) {
     const classes = useStyles();
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(false);
     const { literals } = useContext(LangContext);
 
     useEffect(() => {
-        setChecked(true)
-    }, [setChecked])
+        setChecked(true);
+    }, [setChecked]);
 
     if (options.length === 0) {
         return <></>;
@@ -58,20 +58,34 @@ function Cards({ options, location }) {
                 {Object.entries(options).map(([key, option], index) => (
                     <Grid item key={index} xs={12} sm={6} md={4}>
                         <Grow in={checked} timeout={1000}>
-                            <CardActionArea className={classes.link} to={location.pathname + "/" + key} component={Link}>
+                            <CardActionArea
+                                className={classes.link}
+                                to={location.pathname + "/" + key}
+                                component={Link}
+                            >
                                 <Card className={classes.card}>
-                                    {/* <CardMedia
+                                    <CardMedia
                                         className={classes.cardMedia}
-                                        image="https://via.placeholder.com/265x150.webp"
-                                        title="Image title"
-                                    /> */}
-                                    <CardContent className={classes.cardContent}>
-                                        <Typography gutterBottom variant="h5" component="h2">
+                                        image={option.image_source}
+                                        title={option.title}
+                                    />
+                                    <CardContent
+                                        className={classes.cardContent}
+                                    >
+                                        <Typography
+                                            gutterBottom
+                                            variant="h5"
+                                            component="h2"
+                                        >
                                             {option.title}
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Typography color="primary" className={classes.choose} component="p">
+                                        <Typography
+                                            color="primary"
+                                            className={classes.choose}
+                                            component="p"
+                                        >
                                             {literals.choose}
                                         </Typography>
                                     </CardActions>

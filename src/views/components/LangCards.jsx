@@ -11,11 +11,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 
-import en from "../../lang/en.json";
-
+import SupportedLanguages from "../../utils/SupportedLanguages";
 import LangContext from "../../utils/LangContext";
-
-const supportedLangs = [en]
 
 const useStyles = makeStyles((theme) => ({
     cardGrid: {
@@ -34,49 +31,62 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
     link: {
-        textDecoration: "none"
-    }
+        textDecoration: "none",
+    },
 }));
 
 export default function LangCards() {
     const classes = useStyles();
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(false);
 
     useEffect(() => {
-        setChecked(true)
-    }, [setChecked])
+        setChecked(true);
+    }, [setChecked]);
 
     return (
-        <LangContext.Provider value={en}>
+        <LangContext.Provider value={SupportedLanguages.en}>
             <Container className={classes.cardGrid} maxWidth="md">
                 <Grid container spacing={4}>
-                    {supportedLangs.map((lang, index) => (
-                        <Grid item key={index} xs={12} sm={6} md={4}>
-                            <Grow in={checked} timeout={1000}>
-                                <CardActionArea className={classes.link} to={"/" + lang.slug} component={Link}>
-                                    <Card className={classes.card}>
-                                        {/* <CardMedia
-                                            className={classes.cardMedia}
-                                            image="https://via.placeholder.com/265x150.webp"
-                                            title="Image title"
-                                        /> */}
-                                        <CardContent className={classes.cardContent}>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                {lang.title}
-                                            </Typography>
-                                        </CardContent>
-                                        <CardActions>
-                                            <Typography color="primary" component="p">
-                                                {lang.literals.choose}
-                                            </Typography>
-                                        </CardActions>
-                                    </Card>
-
-                                </CardActionArea>
-                            </Grow>
-
-                        </Grid>
-                    ))}
+                    {Object.keys(SupportedLanguages)
+                        .map((langSlug) => SupportedLanguages[langSlug])
+                        .map((lang, index) => (
+                            <Grid item key={index} xs={12} sm={6} md={4}>
+                                <Grow in={checked} timeout={1000}>
+                                    <CardActionArea
+                                        className={classes.link}
+                                        to={"/" + lang.slug}
+                                        component={Link}
+                                    >
+                                        <Card className={classes.card}>
+                                            <CardMedia
+                                                className={classes.cardMedia}
+                                                image={lang.image}
+                                                title={lang.title}
+                                            />
+                                            <CardContent
+                                                className={classes.cardContent}
+                                            >
+                                                <Typography
+                                                    gutterBottom
+                                                    variant="h5"
+                                                    component="h2"
+                                                >
+                                                    {lang.title}
+                                                </Typography>
+                                            </CardContent>
+                                            <CardActions>
+                                                <Typography
+                                                    color="primary"
+                                                    component="p"
+                                                >
+                                                    {lang.literals.choose}
+                                                </Typography>
+                                            </CardActions>
+                                        </Card>
+                                    </CardActionArea>
+                                </Grow>
+                            </Grid>
+                        ))}
                 </Grid>
             </Container>
         </LangContext.Provider>
