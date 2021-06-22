@@ -524,7 +524,7 @@ Sources:
 
 #### What if my visitor visa is denied?
 
-URL: [https://legal-clinic.mfso.ca/#/en/immigration/visiting/visitor-visa-denied](https://legal-clinic.mfso.ca/#/en/immigration/visiting/visitor-visa-denined)
+URL: [https://legal-clinic.mfso.ca/#/en/immigration/visiting/visitor-visa-denied](https://legal-clinic.mfso.ca/#/en/immigration/visiting/visitor-visa-denied)
 
 If your application for a visitor visa was denied, then you should not apply again with the same exact information. Even if you apply with the help of an immigration or travel agent, but the information is the same, then the decision will not be changed. Your application may be refused because: - It is believed you will stay in Canada beyond your authorized stay; or
 
@@ -672,7 +672,7 @@ URL: [https://legal-clinic.mfso.ca/#/en/immigration/sponsorship](https://legal-c
 
 #### Am I eligible to make a sponsorship application?
 
-URL: [https://legal-clinic.mfso.ca/#/en/immigration/sponsorship/sponsorship-eligibility](https://legal-clinic.mfso.ca/#/en/immigration/sponsorship/sponorship-eligibilty)
+URL: [https://legal-clinic.mfso.ca/#/en/immigration/sponsorship/sponsorship-eligibility](https://legal-clinic.mfso.ca/#/en/immigration/sponsorship/sponsorship-eligibility)
 
 If you are at least 18 years of age or older, you can sponsor your family members who are outside of Canada to live in Canada as permanent residents if you are:
 
@@ -769,25 +769,25 @@ Sources:
 
 ## Employment
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment](https://legal-clinic.mfso.ca/#/en/empolyment)
+URL: [https://legal-clinic.mfso.ca/#/en/employment](https://legal-clinic.mfso.ca/#/en/employment)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ### Worker Rights
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### What are my rights if I am laid off?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/layoff-rights)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ##### How much notice should I be given if I am laid off?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights/layoff-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/layoff-rights/layoff-notice)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights/layoff-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights/layoff-notice)
 
 If you are already laid off temporarily from work, then you may be laid off permanently without notice. A 'temporary layoff' is when an employer temporarily reduces or stops your employment with the understanding that you will return later. A temporary layoff can be upto 13 weeks out of 20 weeks in a row. But a temporary layoff must be less than 35 weeks out of 32weeks in a row.
 
@@ -800,13 +800,13 @@ Sources:
 
 #### What are my rights if I am fired?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ##### How much notice should I be given if I am fired?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-notice)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-notice)
 
 For notices of termination, there are minimum notice periods ranging from 1 week, for those who worked at least 3 months, to 8 weeks, for people who worked for 8 years or more with the same employer. Usually, people are given more than these minimum notice periods because the court will look to see what is 'reasonable' in the circumstances. Usually, more than the minimum notice periods are required when:
 
@@ -823,7 +823,7 @@ Sources:
 
 ##### Can I be fired without any notice?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-without-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-without-notice)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-without-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-without-notice)
 
 Yes, in some cases your employer can fire you without notice if you engage in wrongful conduct, such as stealing or purposefully damaging employer property. You may also be fired without notice if you did not work continuously for at least 3 months with your employer. Even if you did something wrong, your employer may not fire you without notice if:
 
@@ -840,7 +840,7 @@ Sources:
 
 ##### Must my employer give reasons for firing or laying off?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-justification](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-justification)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-justification](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-justification)
 
 Your employer is not required to give reasons for firing or laying you off but must give you a written notice of termination in many situations. A written 'notice of termination' can take one of two forms:
 
@@ -855,13 +855,13 @@ Sources:
 
 ### Employment Insurance (EI) Benefits
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### What are EI benefits?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits)
 
 EI benefits are financial benefits provided to those who lose their jobs through no fault of their own and are available for and able to work but cannot find work.
 
@@ -874,7 +874,7 @@ Sources:
 
 #### How do I qualify for EI?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-qualification](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/ei-qualification)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-qualification](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-qualification)
 
 You may be entitled to EI regular benefits if you
 
@@ -894,7 +894,7 @@ Sources:
 
 #### When should I apply for EI?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/when-to-apply](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/when-to-apply)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/when-to-apply](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/when-to-apply)
 
 You should immediately apply for EI once you stop working because if you do not apply for EI within 4 weeks after you stop working, then you may get fewer EI payments. If you wait too long, then you may not receive EI payments at all.
 
@@ -906,7 +906,7 @@ Sources:
 
 #### What should I do before applying for EI?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/before-application](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/before-application)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/before-application](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/before-application)
 
 Ensure you meet the number of hours of insurable employment to qualify for EI. The hours of insurable employment must be accumulated during your qualifying period. The 'qualifying period' is the shorter of the:
 
@@ -922,7 +922,7 @@ Sources:
 
 #### What if I do not qualify for EI?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-unqualified](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/ei-unqualified)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-unqualified](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-unqualified)
 
 If you do not qualify for EI you may get financial assistance from another government program called Ontario Works (OW). To be eligible for OW, you must:
 
@@ -939,13 +939,13 @@ Sources:
 
 ### Getting Paid for Work
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation](https://legal-clinic.mfso.ca/#/en/empolyment/compensation)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation](https://legal-clinic.mfso.ca/#/en/employment/compensation)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### How much must my employer pay me for work?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/minimum-wage](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/minimum-wage)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/minimum-wage](https://legal-clinic.mfso.ca/#/en/employment/compensation/minimum-wage)
 
 You must be paid 'minimum wage' which is the least amount of hourly pay you must receive. Most employees are eligible for minimum wage, even if full-time, part-time, casual, or paid hourly, commission, flat rate or salary. From January1, 2018 to September 30, 2020, the general minimum wage is $14.00 per hour and from October 1, 2020 to September30, 2021, it is $14.25 per hour.
 
@@ -957,7 +957,7 @@ Sources:
 
 #### Can my employer make deductions from my wages?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/wage-deductions](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/wage-deductions)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/wage-deductions](https://legal-clinic.mfso.ca/#/en/employment/compensation/wage-deductions)
 
 Yes, your employer can make deductions from your wages. There are 3 types of deductions your employer can make:
 
@@ -975,7 +975,7 @@ Sources:
 
 #### If my employer owes me money, when must it be paid to me?
 
-URL: [https://legal-clinic.mfso.ca/#/en/empolyment/compensation/employer-debt](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/employer-debt)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/employer-debt](https://legal-clinic.mfso.ca/#/en/employment/compensation/employer-debt)
 
 Employers must establish a regular pay period and a regular pay day for employees. Your employer must pay your wages, including vacation pay, by the later of:
 
@@ -993,7 +993,7 @@ Sources:
 
 #### Must my employer pay me overtime?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/overtime](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/overtime)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/compensation/overtime](https://legal-clinic.mfso.ca/#/en/employment/compensation/overtime)
 
 It depends on the situation. Usually, overtime begins after you worked more than 44 hours a week. After 44 hours, you must be paid 'overtime pay' which is 1½ times your regular rate of pay. For example, an employee paid $14 an hour will have an overtime rate of $21 an hour (14 × 1.5 = 21).
 
@@ -1004,13 +1004,13 @@ Sources:
 
 ### Hours of Work
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Can I be asked to work longer hours?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/extra-hours-request](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/extra-hours-request)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/extra-hours-request](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/extra-hours-request)
 
 Yes, your employer can ask you to work longer hours, but you can refuse to do so unless you agreed, in writing, to work longer hours.Before your employer can ask you to sign an agreement to work longer hours, you must be given an information sheet about overtime pay and work hours. If you signed an agreement to work longer hours you can cancel it by giving your employer 2 weeks ' written notice if you agreed to work:
 
@@ -1025,7 +1025,7 @@ Sources:
 
 #### Must my employer give me weekends off?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/weekends](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/weekends)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/weekends](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/weekends)
 
 No, your employer is not required to give you weekends off but is required to give you:
 
@@ -1040,7 +1040,7 @@ Sources:
 
 #### How many breaks can I get at work?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/breaks](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/breaks)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/breaks](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/breaks)
 
 Generally, you get at least 30 minutes of break for every 5 hours worked. Your employer is not required to pay you during this break unless your employment agreement requires payment. If you and your employer agree verbally or in writing, instead of a 30-minute break, you may have 2 separate breaks, each being 15 minutes. Meal breaks are not considered hours of work and are not included in overtime hours whether paid or unpaid.
 
@@ -1053,13 +1053,13 @@ Sources:
 
 ### Taking Time Off
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off](https://legal-clinic.mfso.ca/#/en/empolyment/time-off)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off](https://legal-clinic.mfso.ca/#/en/employment/time-off)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Can I take a few days off for illness and other personal emergencies
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency](https://legal-clinic.mfso.ca/#/en/empolyment/time-off/illness-and-emergency)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency](https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency)
 
 Yes, an employee who is entitled to sick leave can take up to 3 unpaid days of leave each calendar year (a 1-year period begins on January 1 and ends on December 31) due to personal illness, injury or medical emergency. Taking time off for these reasons is known as 'sick leave'. You can take sick leave if you are ill, injured, or experience a medical emergency.
 
@@ -1072,7 +1072,7 @@ Sources:
 
 ##### Must I be injured to qualify for sick leave?
 
-URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency/sick-leave](https://legal-clinic.mfso.ca/#/en/empolyment/time-off/illness-and-emergency/sick-leave)
+URL: [https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency/sick-leave](https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency/sick-leave)
 
 You do not have to be injured at work or experience an emergency to qualify for sick leave. You can request it if you have a pre-planned surgery, for example. You cannot save unused sick leaves for future years.
 
