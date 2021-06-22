@@ -29,10 +29,7 @@ function Navigator({ location, match }) {
                 let sideBarList = [];
                 for (let key in currentModule.options) {
                     if (finalParent !== key) {
-                        sideBarList.push({
-                            title: currentModule.options[key].title,
-                            path: key,
-                        });
+                        sideBarList.push(currentModule.options[key]);
                     }
                 }
                 setSideBarListState(sideBarList);

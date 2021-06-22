@@ -33,8 +33,8 @@ function SideBarLinks({ links }) {
                     {links.map((item) => (
                         <Link
                             className={classes.link}
-                            to={item.path}
-                            key={item.path}
+                            to={item.href}
+                            key={item.href}
                         >
                             <ListItem button>
                                 <ListItemAvatar>
