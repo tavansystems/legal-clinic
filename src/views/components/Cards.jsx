@@ -60,7 +60,7 @@ function Cards({ options, location }) {
                         <Grow in={checked} timeout={1000}>
                             <CardActionArea
                                 className={classes.link}
-                                to={location.pathname + "/" + key}
+                                to={option.href}
                                 component={Link}
                             >
                                 <Card className={classes.card}>
