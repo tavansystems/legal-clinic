@@ -1,5 +1,5 @@
 import React from "react";
-import en from "../lang/en.json"
+import en from "../lang/en.json";
 
 const LangContext = React.createContext(en);
 

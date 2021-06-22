@@ -1,21 +1,21 @@
-import SupportedLanguages from './SupportedLanguages';
+import SupportedLanguages from "./SupportedLanguages";
 
-let url
-const optionList = []
+let url;
+const optionList = [];
 const mapOptions = (options, path = "/") => {
     for (let key in options) {
-        url = (path !== "/" ? path : "") + "/" + key
+        url = (path !== "/" ? path : "") + "/" + key;
         optionList.push({
             title: options[key].title,
             path: url,
-            content: options[key].content ? options[key].content : null
-        })
+            content: options[key].content ? options[key].content : null,
+        });
         if (options[key].options) {
-            mapOptions(options[key].options, url)
+            mapOptions(options[key].options, url);
         }
     }
-    url = ""
-}
-mapOptions(SupportedLanguages)
+    url = "";
+};
+mapOptions(SupportedLanguages);
 
 export default optionList;

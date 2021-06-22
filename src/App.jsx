@@ -1,13 +1,9 @@
 import React from "react";
-import {
-    HashRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
-import Navigator from './views/pages/Navigator'
-import Home from './views/pages/Home'
-import NotFound from './views/pages/NotFound'
+import Navigator from "./views/pages/Navigator";
+import Home from "./views/pages/Home";
+import NotFound from "./views/pages/NotFound";
 
 export default function App() {
     return (

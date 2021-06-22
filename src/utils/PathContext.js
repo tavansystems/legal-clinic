@@ -2,7 +2,7 @@ import React from "react";
 
 const LangContext = React.createContext({
     lang: "",
-    path: ""
+    path: "",
 });
 
 export default LangContext;

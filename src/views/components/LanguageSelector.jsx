@@ -1,16 +1,15 @@
-import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
 import { makeStyles } from "@material-ui/core/styles";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import Typography from "@material-ui/core/Typography";
-import PublicIcon from '@material-ui/icons/Public';
+import PublicIcon from "@material-ui/icons/Public";
 
-import SupportedLanguages from '../../utils/SupportedLanguages';
+import SupportedLanguages from "../../utils/SupportedLanguages";
 import LangContext from "../../utils/LangContext";
 import PathContext from "../../utils/PathContext";
-
 
 const useStyles = makeStyles((theme) => ({
     langIcon: {
@@ -21,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
         display: "inline",
     },
     select: {
-        '&:focus': {
-            background: "inherit"
+        "&:focus": {
+            background: "inherit",
         },
     },
     inputInput: {
@@ -30,22 +29,22 @@ const useStyles = makeStyles((theme) => ({
         border: "none",
         // vertical padding + font size from searchIcon
         paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-        transition: theme.transitions.create('width'),
-        width: '100%',
+        transition: theme.transitions.create("width"),
+        width: "100%",
 
-        [theme.breakpoints.up('sm')]: {
-            width: '12ch',
-            '&:focus': {
-                width: '50ch'
-            }
-        }
-    }
+        [theme.breakpoints.up("sm")]: {
+            width: "12ch",
+            "&:focus": {
+                width: "50ch",
+            },
+        },
+    },
 }));
 
 function LanguageSelector() {
-    const classes = useStyles()
-    const { slug } = useContext(LangContext)
-    const { lang, path } = useContext(PathContext)
+    const classes = useStyles();
+    const { slug } = useContext(LangContext);
+    const { lang, path } = useContext(PathContext);
 
     return (
         <Select
@@ -53,37 +52,47 @@ function LanguageSelector() {
             id="lang-selector"
             value={lang === "" ? "None" : slug}
             label="Language"
-            classes={{ nativeInput: classes.inputInput, select: classes.select }}
+            classes={{
+                nativeInput: classes.inputInput,
+                select: classes.select,
+            }}
             disableUnderline
         >
             <MenuItem value="None" disabled default>
-                <Typography className={classes.sourceTitle} style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexWrap: 'wrap',
-                }}>
+                <Typography
+                    className={classes.sourceTitle}
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        flexWrap: "wrap",
+                    }}
+                >
                     <PublicIcon className={classes.langIcon} />
                     <span>Select Your Language</span>
                 </Typography>
             </MenuItem>
-            {Object.keys(SupportedLanguages).map(lang => (
-                <MenuItem to={"/" + SupportedLanguages[lang].slug + "/" + path} component={Link} key={SupportedLanguages[lang].slug} value={SupportedLanguages[lang].slug}>
-                    <Typography className={classes.sourceTitle} style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        flexWrap: 'wrap',
-                    }}>
+            {Object.keys(SupportedLanguages).map((lang) => (
+                <MenuItem
+                    to={"/" + SupportedLanguages[lang].slug + "/" + path}
+                    component={Link}
+                    key={SupportedLanguages[lang].slug}
+                    value={SupportedLanguages[lang].slug}
+                >
+                    <Typography
+                        className={classes.sourceTitle}
+                        style={{
+                            display: "flex",
+                            alignItems: "center",
+                            flexWrap: "wrap",
+                        }}
+                    >
                         <PublicIcon className={classes.langIcon} />
-                        <span>                        
-                            {SupportedLanguages[lang].title}
-                        </span>
+                        <span>{SupportedLanguages[lang].title}</span>
                     </Typography>
                 </MenuItem>
             ))}
         </Select>
-    )
+    );
 }
 
-export default LanguageSelector
-
-
+export default LanguageSelector;
