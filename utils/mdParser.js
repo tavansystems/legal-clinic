@@ -3,20 +3,23 @@ var files = fs.readdirSync("lang/");
 
 for (let file of files) {
     const langSlug = file.replace(".md", "");
+
     fs.readFile("lang/" + file, "utf8", function (err, data) {
         let r =
             /^#+ *(\S.*)\r?\n\r?\nURL: \[([^\][]+)\]\(([^()]+)\)((?:\r?\n(?!#).*)*)/gm;
         let navigator = { options: {} };
-        let m2, title, url, content, sources, path;
+        let m2, title, url, href, content, sources, path;
         for (let match of data.match(r)) {
             m2 = match.match(
                 /^#+ *(\S.*)\r?\n\r?\nURL: \[([^\][]+)\]\(([^()]+)\)((?:\r?\n(?!#).*)*)/
             );
             title = m2[1];
             url = m2[2];
+            href = url.replace("https://legal-clinic.mfso.ca/#", "");
             path = url
                 .replace("https://legal-clinic.mfso.ca/#/", "")
                 .split("/");
+
             content = m2[4].replace(/Sources:\n((?:\r?\n(?!#).*)*)/, "");
             sources = m2[4].match(/\* \[(.*)\]/g);
             let sourcelist = [];
@@ -30,6 +33,7 @@ for (let file of files) {
             for (let pathitem of path) {
                 let doc = {};
                 doc["title"] = title;
+                doc["href"] = href;
                 doc["image_source"] = "/img/graphics/" + pathitem + ".png";
                 if (
                     content.search(
