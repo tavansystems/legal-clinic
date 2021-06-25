@@ -49,6 +49,10 @@ function Navigator({ location, match }) {
             }
         }
         setBreadCrumbs(breadCrumbs);
+        document.title = currentModule.title;
+        if (currentModule.content) {
+            document.description = currentModule.content.slice(0, 100);
+        }
         setModule(currentModule);
     }, [path, lang, selectedLang]);
 
