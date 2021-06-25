@@ -47,7 +47,7 @@ export default function SearchResultList({ results }) {
                         <ListItemAvatar>
                             <Avatar
                                 alt={result.title}
-                                src="https://via.placeholder.com/265x150.webp"
+                                src={result.image_source}
                             />
                         </ListItemAvatar>
                         <ListItemText

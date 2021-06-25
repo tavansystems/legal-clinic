@@ -9,6 +9,7 @@ const mapOptions = (options, path = "/") => {
             title: options[key].title,
             path: url,
             content: options[key].content ? options[key].content : null,
+            image_source: options[key].image_source,
         });
         if (options[key].options) {
             mapOptions(options[key].options, url);
