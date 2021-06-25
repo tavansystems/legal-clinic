@@ -73,7 +73,9 @@ function LanguageSelector() {
             </MenuItem>
             {Object.keys(SupportedLanguages).map((lang) => (
                 <MenuItem
-                    to={"/" + SupportedLanguages[lang].slug + "/" + path}
+                    to={
+                        "/" + SupportedLanguages[lang].slug + "/" + (path || "")
+                    }
                     component={Link}
                     key={SupportedLanguages[lang].slug}
                     value={SupportedLanguages[lang].slug}
