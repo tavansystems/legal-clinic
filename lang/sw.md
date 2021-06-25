@@ -783,25 +783,25 @@ Sources:
 
 ## Ajira
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment](https://legal-clinic.mfso.ca/#/en/empolyment)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment](https://legal-clinic.mfso.ca/#/en/employment)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ### Haki za Mfanyakazi
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Haki zangu ni zipi kama nikiachishwa kazi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/layoff-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/layoff-rights)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/layoff-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ##### Je, nipewe notisi ya muda gani kama kama ninaachishwa kazi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/layoff-rights/layoff-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/layoff-rights/layoff-notice)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/layoff-rights/layoff-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/layoff-rights/layoff-notice)
 
 Kama umeachishwa kazi kwa muda mfupi, basi unaweza kuachishwa kazi kimoja bila kupewa notisi. ‘Kuachishwa kazi kwa muda mfupi’ ni pale ambapo muajiri anapunguza au kusitisha ajira yako kwa muda kwa maelewano kwamba utarudi hapo baadae. Kuachisha kazi kwa muda kunaweza kuwa mpaka wiki 13 kati ya wiki 20 mfululizo. Lakini kuachisha kazi kwa muda ni lazima kuwe chini ya wiki 35 kati ya wiki 32 mfululizo.
 
@@ -814,13 +814,13 @@ Sources:
 
 #### Haki zangu ni zipi kama nikifukuzwa kazi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 ##### Je, nipewe notisi ya muda gani kama nikifukuzwa kazi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-notice)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-notice)
 
 Notisi ya kufukuzwa kazi, kuna muda wa kiwango cha chini unaokuwa kuanzia wiki 1, kwa wafanyakazi ambao wamefanya kazi kuanzia miezi 3, mpaka wiki 8, kwa watu ambao wamefanya kazi kwa miaka 8 au zaidi na mwajiri huyo mmoja. Mara nyingi, watu wanapewa muda zaidi ya viwango hivi vya notisi kwa sababu mahakama itaangalia ili kuona ni nini ‘cha msingi’ katika hali husika. Muda mwingi,muda wa notisi zaidi ya kiwango cha chini huwa unahitajika pale ambapo:
 
@@ -837,7 +837,7 @@ Sources:
 
 ##### Je, ninaweza kufukuzwa kazi bila kupewa notisi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-without-notice](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-without-notice)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-without-notice](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-without-notice)
 
 Ndiyo, katika baadhi ya kesi mwajiri wako anaweza kukufukuza bila kukupa notisi kama ukijihusisha na mambo yasiyo sahihi, kama vile wizi, au kuharibu mali ya mwajiri kwa makusudi. Unaweza pia kufukuzwa bila notisi kama haukufanya kazi kwa mfululizo angalau miezi 3 na mwajiri wako. Hata kama ukifanya kosa, mwajiri wako anaweza asikufukuze bila kukupa notisi kama:
 
@@ -854,7 +854,7 @@ Sources:
 
 ##### Je, ni lazima mwajiri wangu atoe sababu ya kunifukuza au kuniachisha kazi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-justification](https://legal-clinic.mfso.ca/#/en/empolyment/worker-rights/fire-rights/firing-justification)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/worker-rights/fire-rights/firing-justification](https://legal-clinic.mfso.ca/#/en/employment/worker-rights/fire-rights/firing-justification)
 
 Mwajiri wako ahitajiki kutoa sababu ya kukufukuza au kukuachisha kazi lakini ni lazima akupe notisi ya maandishi ya kukusimamisha katika hali mbalimbali. ‘Notisi ya kusitisha’ inaweza kuwa katika miundo miwili:
 
@@ -869,13 +869,13 @@ Sources:
 
 ### Faida za Bima ya Ajira (EI)
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Je, faida za EI ni zipi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits)
 
 Faida za EI ni faida za kifedha ambazo zinatolewa kwa watu ambao wanapoteza kazi zao kwa sababu ambazo sio makosa yao na wako tayari na wana uwezo wa kufanya kazi lakini hawawezi kupata kazi.
 
@@ -888,7 +888,7 @@ Sources:
 
 #### Ninawezaje kukidhi katika EI?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/ei-qualification](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/ei-qualification)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/ei-qualification](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-qualification)
 
 Unaweza kustahili kupokea faida za EI kama
 
@@ -908,7 +908,7 @@ Sources:
 
 #### Lini natakiwa kutuma maombi ya EI?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/when-to-apply](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/when-to-apply)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/when-to-apply](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/when-to-apply)
 
 Unatakiwa kutuma maombi ya EI mara moja baada ya kuacha kufanya kazi kwa sababu usipotuma maombi ndani ya wiki 4 baada ya kuacha kufanya kazi, basi unaweza kupata malipo kidogo ya EI. Kama ukisubiri kwa muda mrefu, basi unaweza usipokee malipo ya EI kabisa.
 
@@ -920,7 +920,7 @@ Sources:
 
 #### Nifanye nini kabla sijatuma maombi ya EI?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/before-application](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/before-application)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/before-application](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/before-application)
 
 Hakikisha unafikia kiwango cha idadi ya masaa ya ajira ili kukidhi kigezo cha EI. Idadi ya masaa ya ajira ya bima ni lazima iwe imekusanywa katika kipindi chako cha kukidhi. ‘Kipindi cha kukidhi’ ni kile kilicho kifupi baina ya:
 
@@ -936,7 +936,7 @@ Sources:
 
 #### Itakuwaje kama sikidhi vigezo vya EI?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/ei-unqualified](https://legal-clinic.mfso.ca/#/en/empolyment/employment-insurance/ei-benefits/ei-unqualified)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/employment-insurance/ei-benefits/ei-unqualified](https://legal-clinic.mfso.ca/#/en/employment/employment-insurance/ei-benefits/ei-unqualified)
 
 Kama haukidhi vigezo vya EI unaweza kupata msaada wa kifedha kutoka katika programu nyingine ya serikali inayoitwa Ontario Works (OW). Ili kukidhi vigezo vya OW, ni lazima:
 
@@ -953,13 +953,13 @@ Sources:
 
 ### Kulipwa Kwa Ajili ya Kazi
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation](https://legal-clinic.mfso.ca/#/en/empolyment/compensation)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation](https://legal-clinic.mfso.ca/#/en/employment/compensation)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Ni kiasi gani muajiri anatakiwa kunilipa kwa kazi yangu?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/minimum-wage](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/minimum-wage)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/minimum-wage](https://legal-clinic.mfso.ca/#/en/employment/compensation/minimum-wage)
 
 Ni lazima ulipwe ‘malipo ya kiwango cha chini’ ambao ni kiwango kidogo kabisa cha malipo kwa saa unachotakiwa kupokea. Wafanyakazi wengi wanakidhi kiwango kinachohitajika kwa ajili ya kupokea malipo ya kiwango cha chini, hata kama ni mwajiriwa wa muda wote (full-time), sehemu ya muda (part-time), kawaida (casual), au analipwa kwa saa, malipo kwa kila mauzo (commission), kiwango kimoja (flat rate) au mshahara. Kuanzia Januari 1, 2018 mpaka Septemba 30, 2020, kwa ujumla malipo ya kiwango cha chini ni $14.00 kwa saa na kuanzia Oktoba 1, 2020 mpaka Septemba 30, 2021, kiwango hicho ni $14.25 kwa saa.
 
@@ -971,7 +971,7 @@ Sources:
 
 #### Je, muajiri wangu anaweza kufanya makato katika malipo yangu?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/wage-deductions](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/wage-deductions)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/wage-deductions](https://legal-clinic.mfso.ca/#/en/employment/compensation/wage-deductions)
 
 Ndiyo, muajiri wako anaweza kufanya makato katika malipo yako. Kuna aina 3 za makato ambayo muajiri wako anaweza kuyafanya:
 
@@ -989,7 +989,7 @@ Sources:
 
 #### Kama ninamdai muajiri wangu pesa, ni lini inatakiwa nilipwe?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/employer-debt](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/employer-debt)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/employer-debt](https://legal-clinic.mfso.ca/#/en/employment/compensation/employer-debt)
 
 Muajiri ni lazima aweke kipindi cha maripo kinachojirudia mara kwa mara na siku ya malipo kwa wafanyakazi. Muajiri wako ni lazima alipo malipo yako, ikiwemo pia malipo ya siku za mapumziko, punde baada ya:
 
@@ -1007,7 +1007,7 @@ Sources:
 
 #### Je, ni lazima muajiri wangu anilipe malipo ya nyongeza kwa kazi ya ziada (overtime)?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/overtime](https://legal-clinic.mfso.ca/#/en/empolyment/compensation/overtime)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/compensation/overtime](https://legal-clinic.mfso.ca/#/en/employment/compensation/overtime)
 
 Inategemea na hali iliyopo. Kawaida, malipo ya nyongeza ya muda yanaanza kama umefanya kazi kwa zaidi ya masaa 44 katika wiki. Baada ya masa 44, ni lazima ulipwe ‘malipo ya nyongeza ya muda’ ambayo ni mara 1½ ya malipo yako ya kawaida. Kwa mfano, kama muajiri anakulipa $14 kwa saa atalazimika kukulipa malipo ya nyongeza ya muda ya $21 kwa saa (14 x 1.5 = 21).
 
@@ -1018,13 +1018,13 @@ Sources:
 
 ### Massa ya Kazi
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Je, ninaweza kuombwa kufanya kazi kwa muda mrefu zaidi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/extra-hours-request](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/extra-hours-request)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/extra-hours-request](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/extra-hours-request)
 
 Ndiyo, muajiri wako anaweza kukuomba kufanya kazi kwa masaa mengi zaidi, lakini unaweza kukataa isipokuwa kama wewe utakubali, kwa maandishi, kufanya kazi kwa masaa mengi zaidi. Kabla ya muajiri wako kukuomba usaini makubaliano ya kufanya kazi kwa muda mrefu zaidi, ni lazima upewe jedwali la taarifa ya malipo ya ziada na muda wa kazi. Kama ukisaini makubaliano ya kufanya kazi kwa masaa mengi zaidi unaweza kubatilisha makubaliano hayo kwa kumpa muajiri wako notisi ya wiki 2 katika maandishi kama ulikubali kufanya kazi:
 
@@ -1039,7 +1039,7 @@ Sources:
 
 #### Je, ni lazima muajiri wangu anipe mapumziko siku za wikiendi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/weekends](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/weekends)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/weekends](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/weekends)
 
 Hapana, muajiri wako halazimishwi kukupa siku za mapumziko za wikiendi lakini anatakiwa kukupa:
 
@@ -1054,7 +1054,7 @@ Sources:
 
 #### Ninaweza kupata mapumziko mangapi kazini?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/breaks](https://legal-clinic.mfso.ca/#/en/empolyment/hours-of-work/breaks)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/hours-of-work/breaks](https://legal-clinic.mfso.ca/#/en/employment/hours-of-work/breaks)
 
 Kwa ujumla, unapata angalau dakika 30 za mapumziko kila baada ya masaa 5 ya kufanya kazi. Muajiri wako ahitajiki kukulipa katika kipindi hiki cha kupumzika isipokuwa kama makubaliano yako ya ajira yanahitaji ulipwe. Kama wewe na muajiri wako mkikubaliana kwa maneno au kwa maandishi, badala ya kupumzika kwa dakika 30, unaweza kuchukua mapumziko tofauti mara 2, kila moja ikiwa ni kwa muda wa dakika 15. Muda wa chakula hauhesabiwi kama muda wa kazi na hauunganishwi na muda wa kazi wa ziada bila kujali unalipiwa au haulipiwi.
 
@@ -1067,13 +1067,13 @@ Sources:
 
 ### Kuomba Ruhusa ya Kutokufika
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off](https://legal-clinic.mfso.ca/#/en/empolyment/time-off)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off](https://legal-clinic.mfso.ca/#/en/employment/time-off)
 
 [THIS IS A CHOICE NO CONTENT REQUIRED]
 
 #### Je, ninaweza kuomba ruhusa ya kutokufika kazini kwa sababu ya kuumwa au dharura zingine binafsi?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off/illness-and-emergency](https://legal-clinic.mfso.ca/#/en/empolyment/time-off/illness-and-emergency)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off/illness-and-emergency](https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency)
 
 Ndiyo, mfanyakazi ana haki ya kupata siku za kutokuja akiwa anaumwa na anaweza kuchukua mpaka siku 3 za bila malipo kwa kila mwaka wa kalenda (kipindi cha mwaka-1 kinaanza Januari 1 na kinaisha Desemba 21) kutokana na magonjwa binafsi, majeraha au dharura ya kiafya. Kuchukua ruhusa ya kutokufika kazini kwa sababu hizi inajulikana kama 'sick leave'. Unaweza kuchukua siku za mapumziko ya ugonjwa kama unaumwa, umejeruhika, au una dharura ya kiafya.
 
@@ -1086,7 +1086,7 @@ Sources:
 
 ##### Je, ni lazima niwe nimeumia ili kukidhi vigezo vya kuchukua siku za kuumwa?
 
-URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off/illness-and-emergency/sick-leave](https://legal-clinic.mfso.ca/#/en/empolyment/time-off/illness-and-emergency/sick-leave)
+URL: [https://legal-clinic.mfso.ca/#/sw/employment/time-off/illness-and-emergency/sick-leave](https://legal-clinic.mfso.ca/#/en/employment/time-off/illness-and-emergency/sick-leave)
 
 Sio lazima uwe umeumia kazini au kukabiliwa na dharura ya kiafya ili kukidhi vigezo vya kuchukua siku za kuumwa. Unaweza kutuma maombi kama unapanga kufanya upasuaji siku za mbele, kwa mfano. Hauwezi kuhifadhi siku zako za kuumwa kwa ajili ya kuzitumia miaka ya mbele.
 
