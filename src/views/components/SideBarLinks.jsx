@@ -42,7 +42,10 @@ function SideBarLinks({ links }) {
                                         <LinkIcon />
                                     </Avatar>
                                 </ListItemAvatar>
-                                <ListItemText primary={item.title} />
+                                <ListItemText
+                                    primary={item.title}
+                                    disableTypography={true}
+                                />
                             </ListItem>
                         </Link>
                     ))}
