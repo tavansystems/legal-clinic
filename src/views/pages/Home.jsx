@@ -35,13 +35,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
     const classes = useStyles();
 
-    document.title = "MFSO Legal Clinic";
-    document.description =
-        "The multilingual online legal clinic is an online initiative commissioned and organized by Muslim Family Services of Ottawa, developed and integrated by Tavan Systems Inc. and supported by The Law Foundation of Ontario. This online multilingual legal resource hub will be an invaluable resource for the Ottawa community, due to the ongoing lack of linguistically appropriate materials on everyday legal matters.".slice(
-            0,
-            100
-        );
-
     return (
         <MainLayout>
             <LandingHeroUnit />
