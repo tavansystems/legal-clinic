@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { withRouter, Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import LangContext from "../../utils/LangContext";
 import PathContext from "../../utils/PathContext";
@@ -49,10 +50,6 @@ function Navigator({ location, match }) {
             }
         }
         setBreadCrumbs(breadCrumbs);
-        document.title = currentModule.title;
-        if (currentModule.content) {
-            document.description = currentModule.content.slice(0, 100);
-        }
         setModule(currentModule);
     }, [path, lang, selectedLang]);
 
@@ -70,10 +67,27 @@ function Navigator({ location, match }) {
         parsePath();
     }, [location.pathname, parsePath, selectLang]);
 
+    const getExcerpt = () => {
+        document.title = module.title;
+        if (module.content) {
+            return (document.description = module.content.slice(0, 100));
+        } else {
+            return "";
+        }
+    };
+
     return (
         <PathContext.Provider value={match.params}>
             <LangContext.Provider value={selectedLang}>
                 <MainLayout key={location.pathname}>
+                    <Helmet>
+                        <title>{module.title}</title>
+                        <meta name="description" content={getExcerpt()} />
+                        <meta
+                            property="og:type"
+                            content={module.image_source}
+                        />
+                    </Helmet>
                     <HeroUnit
                         title={
                             path
