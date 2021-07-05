@@ -55,6 +55,7 @@ function Navigator({ location, match }) {
 
     const selectLang = useCallback(() => {
         if (SupportedLanguages[lang]) {
+            document.body.dir = SupportedLanguages[lang].direction;
             setSelectedLang(SupportedLanguages[lang]);
             setBreadCrumbs([{ title: lang.title, path: "/" + lang }]);
         } else {
@@ -76,6 +77,7 @@ function Navigator({ location, match }) {
         }
     };
 
+    console.log(selectedLang.slug);
     return (
         <PathContext.Provider value={match.params}>
             <LangContext.Provider value={selectedLang}>

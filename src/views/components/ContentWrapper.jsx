@@ -1,17 +1,17 @@
-import { useState, useEffect, useContext } from "react"
-import { ReactTinyLink } from "react-tiny-link"
-import Container from "@material-ui/core/Container"
-import Grid from "@material-ui/core/Grid"
-import Grow from "@material-ui/core/Grow"
-import Typography from "@material-ui/core/Typography"
-import Paper from "@material-ui/core/Paper"
-import PublicIcon from "@material-ui/icons/Public"
+import { useState, useEffect, useContext } from "react";
+import { ReactTinyLink } from "react-tiny-link";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import Grow from "@material-ui/core/Grow";
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import PublicIcon from "@material-ui/icons/Public";
 
-import SideBarLinks from "./SideBarLinks"
-import ContentCard from "./ContentCard"
-import LangContext from "../../utils/LangContext"
+import SideBarLinks from "./SideBarLinks";
+import ContentCard from "./ContentCard";
+import LangContext from "../../utils/LangContext";
 
-import { makeStyles } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     cardGrid: {
         paddingTop: theme.spacing(6),
@@ -40,23 +40,22 @@ const useStyles = makeStyles((theme) => ({
             padding: theme.spacing(2),
         },
     },
-    sourceTitle: {
-        padding: theme.spacing(5),
-        color: "black",
+    sourcesTitle: {
+        margin: "0 10px",
     },
-}))
+}));
 
 function ContentWrapper({ sideBarList, main, sources }) {
-    const classes = useStyles()
-    const [checked, setChecked] = useState(false)
-    const { literals } = useContext(LangContext)
+    const classes = useStyles();
+    const [checked, setChecked] = useState(false);
+    const { literals } = useContext(LangContext);
 
     useEffect(() => {
-        setChecked(true)
-    }, [setChecked])
+        setChecked(true);
+    }, [setChecked]);
 
     if (!main) {
-        return <></>
+        return <></>;
     }
 
     return (
@@ -76,9 +75,11 @@ function ContentWrapper({ sideBarList, main, sources }) {
                                     flexWrap: "wrap",
                                 }}
                             >
-                                <PublicIcon style={{ marginRight: "10px" }} />
+                                <PublicIcon />
 
-                                <span>{literals.sources}</span>
+                                <span className={classes.sourcesTitle}>
+                                    {literals.sources}
+                                </span>
                             </Typography>
                             {sources &&
                                 sources.map((source) => (
@@ -101,7 +102,7 @@ function ContentWrapper({ sideBarList, main, sources }) {
                 </Grid>
             </Grid>
         </Container>
-    )
+    );
 }
 
-export default ContentWrapper
+export default ContentWrapper;

@@ -1,23 +1,21 @@
-import React, { useContext } from "react"
+import React, { useContext } from "react";
 
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
-import Typography from "@material-ui/core/Typography"
-import Gavel from "@material-ui/icons/Gavel"
-import { fade, makeStyles } from "@material-ui/core/styles"
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Gavel from "@material-ui/icons/Gavel";
+import { fade, makeStyles } from "@material-ui/core/styles";
 
-import LangContext from "../../utils/LangContext"
-import SearchBar from "./SearchBar"
-import LanguageSelector from "./LanguageSelector"
+import LangContext from "../../utils/LangContext";
+import SearchBar from "./SearchBar";
+import LanguageSelector from "./LanguageSelector";
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
-    icon: {
-        marginRight: theme.spacing(2),
-    },
     title: {
+        margin: theme.spacing(0, 2),
         flexGrow: 1,
         display: "none",
         [theme.breakpoints.up("sm")]: {
@@ -51,11 +49,11 @@ const useStyles = makeStyles((theme) => ({
             width: "auto",
         },
     },
-}))
+}));
 
 export default function Header() {
-    const classes = useStyles()
-    const { literals } = useContext(LangContext)
+    const classes = useStyles();
+    const { literals } = useContext(LangContext);
 
     return (
         <AppBar position="relative">
@@ -77,5 +75,5 @@ export default function Header() {
                 </div>
             </Toolbar>
         </AppBar>
-    )
+    );
 }

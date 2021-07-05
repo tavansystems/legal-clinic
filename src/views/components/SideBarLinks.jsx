@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.main,
         textDecoration: "none",
     },
+    listItemText: { textAlign: "start" },
 }));
 
 function SideBarLinks({ links }) {
@@ -43,6 +44,7 @@ function SideBarLinks({ links }) {
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
+                                    className={classes.listItemText}
                                     primary={item.title}
                                     disableTypography={true}
                                 />

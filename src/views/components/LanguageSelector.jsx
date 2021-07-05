@@ -14,7 +14,6 @@ import PathContext from "../../utils/PathContext";
 const useStyles = makeStyles((theme) => ({
     langIcon: {
         fontSize: "16px",
-        marginRight: "7px",
     },
     selectOption: {
         display: "inline",
@@ -39,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
+    optionText: { margin: "0 7px" },
 }));
 
 function LanguageSelector() {
@@ -89,7 +89,9 @@ function LanguageSelector() {
                         }}
                     >
                         <PublicIcon className={classes.langIcon} />
-                        <span>{SupportedLanguages[lang].title}</span>
+                        <span className={classes.optionText}>
+                            {SupportedLanguages[lang].title}
+                        </span>
                     </Typography>
                 </MenuItem>
             ))}
