@@ -40,8 +40,9 @@ const useStyles = makeStyles((theme) => ({
             padding: theme.spacing(2),
         },
     },
-    sourcesTitle: {
-        margin: "0 10px",
+    sourceTitle: {
+        padding: theme.spacing(5),
+        color: "black",
     },
 }));
 
@@ -76,8 +77,7 @@ function ContentWrapper({ sideBarList, main, sources }) {
                                 }}
                             >
                                 <PublicIcon />
-
-                                <span className={classes.sourcesTitle}>
+                                <span style={{ margin: "0 10px" }}>
                                     {literals.sources}
                                 </span>
                             </Typography>
