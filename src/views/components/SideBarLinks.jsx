@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
         color: theme.palette.primary.main,
         textDecoration: "none",
     },
-    listItemText: { textAlign: "start" },
+    listItemText: { textAlign: "start", fontSize: "1.2rem" },
 }));
 
 function SideBarLinks({ links }) {
