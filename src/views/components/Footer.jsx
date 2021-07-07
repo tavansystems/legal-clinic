@@ -63,7 +63,7 @@ export default function Footer() {
                             {literals.org_name}
                         </Link>{" "}
                         {new Date().getFullYear()}
-                        {"."}
+                        {". "}
                         {literals.developed_by}{" "}
                         <Link
                             href="https://tavansystems.com"
