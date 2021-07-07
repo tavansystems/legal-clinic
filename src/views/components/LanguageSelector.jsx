@@ -68,7 +68,9 @@ function LanguageSelector() {
                     }}
                 >
                     <PublicIcon className={classes.langIcon} />
-                    <span>Select Your Language</span>
+                    <span className={classes.optionText}>
+                        Select Your Language
+                    </span>
                 </Typography>
             </MenuItem>
             {Object.keys(SupportedLanguages).map((lang) => (
