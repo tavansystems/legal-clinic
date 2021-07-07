@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
     const classes = useStyles();
-
+    document.body.dir = "ltr";
     return (
         <MainLayout>
             <LandingHeroUnit />
