@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
@@ -37,6 +39,9 @@ export default function Home() {
     document.body.dir = "ltr";
     return (
         <MainLayout>
+            <Helmet>
+                <title>MFSO Legal Clinic</title>
+            </Helmet>
             <LandingHeroUnit />
             <Container className={classes.cardGrid} maxWidth="md">
                 {/* End hero unit */}
