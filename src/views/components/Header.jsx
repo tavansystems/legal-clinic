@@ -3,7 +3,6 @@ import React, { useContext } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Gavel from "@material-ui/icons/Gavel";
 import { fade, makeStyles } from "@material-ui/core/styles";
 
 import LangContext from "../../utils/LangContext";
@@ -58,7 +57,7 @@ export default function Header() {
     return (
         <AppBar position="relative">
             <Toolbar className={classes.toolbar}>
-                <Gavel className={classes.icon} />
+                <img src="/logo.jpeg" style={{width: '150px', margin: '10px', borderRadius: '20px', }} alt="MFSO logo" />
                 <Typography
                     className={classes.title}
                     variant="h6"
