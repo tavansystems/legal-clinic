@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     heroContent: {
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(8, 0, 9),
+        border: '1px solid rgba(0, 0, 0, 0.17)'
     },
     welcome: {
         marginBottom: "0px",
