@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
 
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import { fade, makeStyles } from "@material-ui/core/styles";
-import Link from "@material-ui/core/Link";
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 
-import LanguageSelector from "./LanguageSelector";
-import LangContext from "../../utils/LangContext";
+import { fade, makeStyles } from '@material-ui/core/styles';
+import Link from '@material-ui/core/Link';
+
+import LanguageSelector from './LanguageSelector';
+import LangContext from '../../utils/LangContext';
 
 const useStyles = makeStyles((theme) => ({
     footer: {
@@ -14,12 +16,12 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(6),
     },
     langSelector: {
-        backgroundColor: fade("#eee", 0.65),
+        backgroundColor: fade('#eee', 0.65),
         borderRadius: theme.shape.borderRadius,
-        margin: "20px auto 0",
-        width: "fit-content",
+        margin: '20px auto 0',
+        width: 'fit-content',
         padding: theme.spacing(0, 1),
-        "&:hover": {
+        '&:hover': {
             backgroundColor: fade(theme.palette.common.white, 0.25),
         },
     },
@@ -34,14 +36,14 @@ export default function Footer() {
             <Grid container>
                 <Grid item xs={12} md={4}></Grid>
                 <Grid item xs={12} md={4}>
-                    <Typography variant="h6" align="center" gutterBottom>
+                    <Typography variant='h6' align='center' gutterBottom>
                         {literals.app_name}
                     </Typography>
                     <Typography
-                        spacing="10"
-                        align="center"
-                        color="textSecondary"
-                        component="p"
+                        spacing='10'
+                        align='center'
+                        color='textSecondary'
+                        component='p'
                     >
                         {literals.disclaimer}
                     </Typography>
@@ -49,26 +51,41 @@ export default function Footer() {
                         <LanguageSelector />
                     </div>
                     <br />
+                    <Box align='center'>
+
+                            <img
+                                src='/LFO_E_Colour.png'
+                                style={{ width: '175px' }}
+                                alt='Law Foundation of Ontario logo'
+                            />
+
+                            <img
+                                src='/tavan-logo.png'
+                                style={{ width: '175px' }}
+                                alt='Tavan Systems Logo'
+                            />
+
+                    </Box>
                     <Typography
-                        variant="body2"
-                        color="textSecondary"
-                        align="center"
+                        variant='body2'
+                        color='textSecondary'
+                        align='center'
                     >
-                        {literals.copyright} ©{" "}
+                        {literals.copyright} ©{' '}
                         <Link
-                            color="inherit"
-                            target="_BLANK"
+                            color='inherit'
+                            target='_BLANK'
                             href={literals.app_org_link}
                         >
                             {literals.org_name}
-                        </Link>{" "}
+                        </Link>{' '}
                         {new Date().getFullYear()}
-                        {". "}
-                        {literals.developed_by}{" "}
+                        {'. '}
+                        {literals.developed_by}{' '}
                         <Link
-                            href="https://tavansystems.com"
-                            target="_BLANK"
-                            rel="noreferrer"
+                            href='https://tavansystems.com'
+                            target='_BLANK'
+                            rel='noreferrer'
                         >
                             Tavan Systems Inc.
                         </Link>
